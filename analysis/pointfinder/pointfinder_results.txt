@@ -1,0 +1,3 @@
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.S83L	TCG -> TTG	S -> L	Nalidixic acid,Ciprofloxacin	8891148	ESC_BA8511AA_AS/ESC_blastn_results.tsv
+gyrA p.S83L	TCG -> TTG	S -> L	Nalidixic acid,Ciprofloxacin	8891148	ESC_LA2840AA_AS/ESC_blastn_results.tsv
