@@ -1,1 +1,11 @@
-for f in assemblies/*; do mv assemblies/ESC_VA0598AA_AS.result.fasta assemblies/ESC_VA0598AA_AS.fasta; done ##trim assembly names to remove '.result' and '.scaffold'
+#All HC50:1106 strains were downloaded from Enterobase (Access date 7 July 2020) the the directory "assemblies"
+#They were then renamed as follows to remove '.result' and '.scaffold'
+for f in assemblies/*; do mv $f ${f/_AS.*/_AS.fasta}; done
+
+#A config file was created at "/data/malcummi/Manuscripts/2020/AVC171/AVC171/misc/config.yaml" which contained the paths to genomic assemblies, etc
+
+
+#Snakemake was used to run abricatelord
+nohup snakemake -j --use-conda  -p > /data/malcummi/Manuscripts/2020/AVC171/AVC171/logs/abricate/nohup_abricatelord.out &
+
+
