@@ -1,0 +1,1 @@
+for f in assemblies/*; do mv assemblies/ESC_VA0598AA_AS.result.fasta assemblies/ESC_VA0598AA_AS.fasta; done ##trim assembly names to remove '.result' and '.scaffold'
