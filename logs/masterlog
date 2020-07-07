@@ -1,11 +1,52 @@
 #All HC50:1106 strains were downloaded from Enterobase (Access date 7 July 2020) the the directory "assemblies"
 #They were then renamed as follows to remove '.result' and '.scaffold'
+#They were also moved to a new directory
 for f in assemblies/*; do mv $f ${f/_AS.*/_AS.fasta}; done
+mkdir assemblies/HC50_1106
+mv assemblies/* assemblies/*/HC50_1106
 
-#A config file was created at "/data/malcummi/Manuscripts/2020/AVC171/AVC171/misc/config.yaml" which contained the paths to genomic assemblies, etc
+#AVC171 was removed and replaced with the closed genome assembly
+rm assemblies/HC50_1106/ESC_SA8243AA_AS.fasta
+cp misc/AVC171.fasta assemblies/HC50_1106/AVC171.fa
 
+#########################################################################################################################
+###################### Abricate #########################################################################################
+#########################################################################################################################
+
+#A config file was created at "/data/malcummi/Manuscripts/2020/AVC171/AVC171/logs/abricate/config.yaml" which contained the paths to genomic assemblies, etc
 
 #Snakemake was used to run abricatelord
-nohup snakemake -j --use-conda  -p > /data/malcummi/Manuscripts/2020/AVC171/AVC171/logs/abricate/nohup_abricatelord.out &
+cd ~/Data/pipelord/abricatelord
+nohup snakemake -j --use-conda  -p > /data/malcummi/Manuscripts/2020/AVC171/AVC171/logs/abricate/nohup_abricatelord_HC50-1106.out &
 
+#abricate yaml files were copied to the github repo, as was the snakefile used
+cp ~/Data/pipelord/abricatelord/config/abricate.yaml /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/abricate
+cp ~/Data/pipelord/abricatelord/Snakefile /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/snakefiles/abricate/
 
+#Made a new directory for the non-AVC171 strains, as well as one for AVC171, to facilitate running snplord
+mkdir HC50_1106_noref
+mkdir ref
+cp HC50_1106/* HC50_1106_noref/
+mv HC50_1106_noref/AVC171.fasta ./AVC171
+
+#########################################################################################################################
+###################### Snippy and phylogenetic trees ####################################################################
+#########################################################################################################################
+
+#A config file was created at "/data/malcummi/Manuscripts/2020/AVC171/AVC171/logs/abricate/config.yaml" which contained the paths to genomic assemblies, etc
+
+# Made a new directory for the log files for nohup: snplord
+mkdir /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy
+mkdir /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/snakefiles/snippy/
+
+#snplord was run with AVC171 as a reference
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_assemblies-j  -j --use-conda -p > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy/nohup_snplord_HC50-1106.out &
+#jobID=9732
+
+#abricate yaml files were copied to the github repo, as was the snakefile used
+cp ~/Data/pipelord/snplord/config_files/fasttree.yaml /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy
+cp ~/Data/pipelord/snplord/config_files/gubbins.yaml /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy
+cp ~/Data/pipelord/snplord/config_files/snp_dists.yaml /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy
+cp ~/Data/pipelord/snplord/config_files/snippy.yaml /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy
+cp ~/Data/pipelord/snplord/Snakefile_assemblies-j /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/snakefiles/snippy/

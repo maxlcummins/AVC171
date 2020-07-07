@@ -1,0 +1,24 @@
+##Configuration file for snippy_snakemake
+#Path to read directory
+#reads: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_200/
+#Path to assemblies to be used in snippy. These must end in ".fasta"
+assemblies: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106_noref
+#Path to directory containing reference fasta file/s. This can be the same as your reads folder or just a folder called 'ref' in your snplord folder.
+#Note: Reference must be formatted to end in ".fa", not ".fasta", ".fsa" or anything else.
+ref: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/AVC171
+#Output directory path. This should NOT end with a '/'
+outdir: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/snippy
+#Output prefix
+prefix: HC50_1106
+
+
+
+#Gubbins params
+gubbins:
+ params: -f 25
+
+
+
+
+    
+
