@@ -50,3 +50,21 @@ cp ~/Data/pipelord/snplord/config_files/gubbins.yaml /home/malcummi/Data/Manuscr
 cp ~/Data/pipelord/snplord/config_files/snp_dists.yaml /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy
 cp ~/Data/pipelord/snplord/config_files/snippy.yaml /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy
 cp ~/Data/pipelord/snplord/Snakefile_assemblies-j /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/snakefiles/snippy/
+
+
+#########################################################################################################################
+###################### for pangenome
+
+cd assemblies
+
+#prokka was run on all '.fasta' files with output for each isolate placed in folder with extension  '.out'
+for f in *.fasta ; fo prokka --compliant --centre UoN --outdir $f.out $f #needed to use '--compliant --centre UoN' due to contig names being too long
+
+mkdir ../gff #make a new folder to store gff files
+
+for f in *out ; do echo cp $f/$(grep -ls 'gff') ${f//.fasta.out/.gff} ; done #copy and rename '.gff' files from '.out' folders to /gff folder
+
+cd ../gff
+
+#activate roary environment
+roary -n -e -p 20 -f ../roary *gff #run roary with multiFASTA allignmert (-e) with MAFFT (-n) using 20 threads (-p 20) and place output into 'roary' folder
