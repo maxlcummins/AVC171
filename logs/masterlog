@@ -74,3 +74,6 @@ roary -n -e -p 20 -f ../roary *gff
 
 #make standart roary plots using roary_plots.py, with tree made by roary
 python roary_plots.py AVC171.clean.fullcore.tree gene_presence_absence.csv
+
+# For phandango visualisation: AVC171.clean.fullcore.tree from snplord was taken, and '.out' was removed from all branch 
+# names by Sublime Text. Modified tree file along with gene_presence absence.csv were used using https://jameshadfield.github.io/phandango/
