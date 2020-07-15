@@ -53,18 +53,24 @@ cp ~/Data/pipelord/snplord/Snakefile_assemblies-j /home/malcummi/Data/Manuscript
 
 
 #########################################################################################################################
-###################### for pangenome
+###################### for pangenome ####################################################################################
+#########################################################################################################################
 
 cd assemblies
 
 #prokka was run on all '.fasta' files with output for each isolate placed in folder with extension  '.out'
-for f in *.fasta ; fo prokka --compliant --centre UoN --outdir $f.out $f #needed to use '--compliant --centre UoN' due to contig names being too long
+#needed to use '--compliant --centre UoN' due to contig names being too long
+for f in *.fasta ; do prokka --compliant --centre UoN --outdir $f.out $f ; done
 
 mkdir ../gff #make a new folder to store gff files
 
-for f in *out ; do echo cp $f/$(grep -ls 'gff') ${f//.fasta.out/.gff} ; done #copy and rename '.gff' files from '.out' folders to /gff folder
+#copy and rename '.gff' files from '.out' folders to /gff folder
+for f in *out ; do echo cp $f/$(grep -ls 'gff') ${f//.fasta.out/.gff} ; done 
 
 cd ../gff
 
-#activate roary environment
-roary -n -e -p 20 -f ../roary *gff #run roary with multiFASTA allignmert (-e) with MAFFT (-n) using 20 threads (-p 20) and place output into 'roary' folder
+#activate roary environment and run with multiFASTA allignmert (-e) with MAFFT (-n) using 20 threads (-p 20) and place output into 'roary' folder
+roary -n -e -p 20 -f ../roary *gff
+
+#make standart roary plots using roary_plots.py, with tree made by roary
+python roary_plots.py AVC171.clean.fullcore.tree gene_presence_absence.csv
