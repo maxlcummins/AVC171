@@ -65,7 +65,8 @@ for f in *.fasta ; do prokka --compliant --centre UoN --outdir $f.out $f ; done
 mkdir ../gff #make a new folder to store gff files
 
 #copy and rename '.gff' files from '.out' folders to /gff folder
-for f in *out ; do echo cp $f/$(grep -ls 'gff') ${f//.fasta.out/.gff} ; done 
+for f in *out ; do cp $(grep -l --exclude=*.log gff $f/*) ../gff/${f//.fasta.out/.gff} ; done
+
 
 cd ../gff
 
