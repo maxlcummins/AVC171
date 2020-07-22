@@ -89,7 +89,11 @@ meta <- meta %>% filter(
         `Length` >= 4500000,
         `Length` <= 6500000,
         `Coverage` >= 20,
-        contig_num_greater_than_200_bp <= 600
+        contig_num_greater_than_200_bp <= 600,
+        Low_Quality_Bases <= 50000
+        #Low quality bases threshold informed by:
+        #plot(meta$`Low Quality Bases`)
+        #100 strains lost by implementing this cutoff, but these strains with high low quality base values are likely to mess up our trees
 )
 
 #reassign original colnames of meta
@@ -126,9 +130,6 @@ if(!file.exists("delims/metadata_subset.txt")){
                     delim = "\t"
         )
 }
-
-
-
 
 
 
