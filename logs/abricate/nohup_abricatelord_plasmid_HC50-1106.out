@@ -1,0 +1,886 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 20
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	54	snippy_run
+	55
+
+[Thu Jul  9 10:53:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6420AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6420AA_AS.tab
+    jobid: 25
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_HA6420AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6420AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6420AA_AS.tab
+
+[Thu Jul  9 10:53:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8273AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8273AA_AS.tab
+    jobid: 47
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_SA8273AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8273AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8273AA_AS.tab
+
+[Thu Jul  9 10:53:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_IA0811AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_IA0811AA_AS.tab
+    jobid: 17
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_IA0811AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_IA0811AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_IA0811AA_AS.tab
+
+[Thu Jul  9 10:53:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3992AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3992AA_AS.tab
+    jobid: 8
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA3992AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3992AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3992AA_AS.tab
+
+[Thu Jul  9 10:53:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4052AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4052AA_AS.tab
+    jobid: 31
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4052AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4052AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4052AA_AS.tab
+
+[Thu Jul  9 10:53:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6332AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6332AA_AS.tab
+    jobid: 48
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_HA6332AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6332AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6332AA_AS.tab
+
+[Thu Jul  9 10:53:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3975AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3975AA_AS.tab
+    jobid: 35
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA3975AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3975AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3975AA_AS.tab
+
+[Thu Jul  9 10:53:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8296AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8296AA_AS.tab
+    jobid: 34
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_SA8296AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8296AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8296AA_AS.tab
+
+[Thu Jul  9 10:53:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_GB6943AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_GB6943AA_AS.tab
+    jobid: 46
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_GB6943AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_GB6943AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_GB6943AA_AS.tab
+
+[Thu Jul  9 10:53:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8291AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8291AA_AS.tab
+    jobid: 11
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_SA8291AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8291AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8291AA_AS.tab
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+
+[Thu Jul  9 10:53:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_VA0598AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_VA0598AA_AS.tab
+    jobid: 7
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_VA0598AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_VA0598AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_VA0598AA_AS.tab
+
+[Thu Jul  9 10:53:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4064AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4064AA_AS.tab
+    jobid: 20
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4064AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4064AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4064AA_AS.tab
+
+[Thu Jul  9 10:53:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8250AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8250AA_AS.tab
+    jobid: 4
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_SA8250AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8250AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8250AA_AS.tab
+
+[Thu Jul  9 10:53:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4066AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4066AA_AS.tab
+    jobid: 32
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4066AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4066AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4066AA_AS.tab
+
+[Thu Jul  9 10:53:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HB8007AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HB8007AA_AS.tab
+    jobid: 30
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_HB8007AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HB8007AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HB8007AA_AS.tab
+
+[Thu Jul  9 10:53:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4053AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4053AA_AS.tab
+    jobid: 44
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4053AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4053AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4053AA_AS.tab
+
+[Thu Jul  9 10:53:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8312AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8312AA_AS.tab
+    jobid: 10
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_SA8312AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8312AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8312AA_AS.tab
+
+[Thu Jul  9 10:53:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6418AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6418AA_AS.tab
+    jobid: 3
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_HA6418AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6418AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6418AA_AS.tab
+
+[Thu Jul  9 10:53:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_BA8511AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_BA8511AA_AS.tab
+    jobid: 6
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_BA8511AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_BA8511AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_BA8511AA_AS.tab
+
+[Thu Jul  9 10:53:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6342AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6342AA_AS.tab
+    jobid: 28
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_HA6342AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6342AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6342AA_AS.tab
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6332AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8250AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3975AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_BA8511AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4064AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HB8007AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4066AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6418AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8273AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6342AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3992AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8312AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8291AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_IA0811AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4052AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4053AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_VA0598AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8296AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_GB6943AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6420AA_AS.fasta
+Found 58 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3992AA_AS.fasta
+[Thu Jul  9 10:53:35 2020]
+Finished job 8.
+1 of 55 steps (2%) done
+Found 57 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3975AA_AS.fasta
+Found 60 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4053AA_AS.fasta
+[Thu Jul  9 10:53:35 2020]
+Finished job 35.
+2 of 55 steps (4%) done
+[Thu Jul  9 10:53:35 2020]
+Finished job 44.
+3 of 55 steps (5%) done
+Found 80 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6420AA_AS.fasta
+Found 72 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4052AA_AS.fasta
+Found 71 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_IA0811AA_AS.fasta
+[Thu Jul  9 10:53:35 2020]
+Finished job 25.
+4 of 55 steps (7%) done
+[Thu Jul  9 10:53:35 2020]
+Finished job 31.
+5 of 55 steps (9%) done
+[Thu Jul  9 10:53:35 2020]
+Finished job 17.
+6 of 55 steps (11%) done
+Found 106 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6332AA_AS.fasta
+Found 78 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_BA8511AA_AS.fasta
+Found 98 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6342AA_AS.fasta
+Found 89 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4066AA_AS.fasta
+[Thu Jul  9 10:53:35 2020]
+Finished job 48.
+7 of 55 steps (13%) done
+Found 85 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6418AA_AS.fasta
+[Thu Jul  9 10:53:35 2020]
+Finished job 6.
+8 of 55 steps (15%) done
+Found 144 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4064AA_AS.fasta
+[Thu Jul  9 10:53:35 2020]
+Finished job 28.
+9 of 55 steps (16%) done
+[Thu Jul  9 10:53:35 2020]
+Finished job 32.
+10 of 55 steps (18%) done
+[Thu Jul  9 10:53:35 2020]
+Finished job 3.
+11 of 55 steps (20%) done
+[Thu Jul  9 10:53:35 2020]
+Finished job 20.
+12 of 55 steps (22%) done
+Found 62 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8296AA_AS.fasta
+[Thu Jul  9 10:53:36 2020]
+Finished job 34.
+13 of 55 steps (24%) done
+Found 51 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_GB6943AA_AS.fasta
+[Thu Jul  9 10:53:36 2020]
+Finished job 46.
+14 of 55 steps (25%) done
+Found 92 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8250AA_AS.fasta
+Found 111 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8273AA_AS.fasta
+Found 105 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8312AA_AS.fasta
+[Thu Jul  9 10:53:36 2020]
+Finished job 4.
+15 of 55 steps (27%) done
+Found 63 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_SA8291AA_AS.fasta
+[Thu Jul  9 10:53:36 2020]
+Finished job 47.
+16 of 55 steps (29%) done
+[Thu Jul  9 10:53:36 2020]
+Finished job 10.
+17 of 55 steps (31%) done
+[Thu Jul  9 10:53:36 2020]
+Finished job 11.
+18 of 55 steps (33%) done
+Found 63 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_VA0598AA_AS.fasta
+Found 99 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HB8007AA_AS.fasta
+[Thu Jul  9 10:53:36 2020]
+Finished job 7.
+19 of 55 steps (35%) done
+[Thu Jul  9 10:53:36 2020]
+Finished job 30.
+20 of 55 steps (36%) done
+
+[Thu Jul  9 10:53:36 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4056AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4056AA_AS.tab
+    jobid: 49
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4056AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4056AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4056AA_AS.tab
+
+[Thu Jul  9 10:53:36 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4063AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4063AA_AS.tab
+    jobid: 15
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4063AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4063AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4063AA_AS.tab
+
+[Thu Jul  9 10:53:36 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_MA2736AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_MA2736AA_AS.tab
+    jobid: 40
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_MA2736AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_MA2736AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_MA2736AA_AS.tab
+
+[Thu Jul  9 10:53:36 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA2848AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LA2848AA_AS.tab
+    jobid: 14
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_LA2848AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA2848AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LA2848AA_AS.tab
+
+[Thu Jul  9 10:53:36 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6413AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6413AA_AS.tab
+    jobid: 5
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_HA6413AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6413AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6413AA_AS.tab
+
+[Thu Jul  9 10:53:36 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LB6278AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LB6278AA_AS.tab
+    jobid: 38
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_LB6278AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LB6278AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LB6278AA_AS.tab
+
+[Thu Jul  9 10:53:36 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3971AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3971AA_AS.tab
+    jobid: 21
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA3971AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3971AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3971AA_AS.tab
+
+[Thu Jul  9 10:53:36 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4061AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4061AA_AS.tab
+    jobid: 51
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4061AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4061AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4061AA_AS.tab
+
+[Thu Jul  9 10:53:36 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4004AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4004AA_AS.tab
+    jobid: 1
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4004AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4004AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4004AA_AS.tab
+
+[Thu Jul  9 10:53:36 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3973AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3973AA_AS.tab
+    jobid: 36
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA3973AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3973AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3973AA_AS.tab
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+
+[Thu Jul  9 10:53:37 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3982AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3982AA_AS.tab
+    jobid: 22
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA3982AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3982AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3982AA_AS.tab
+
+[Thu Jul  9 10:53:37 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3980AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3980AA_AS.tab
+    jobid: 54
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA3980AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3980AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3980AA_AS.tab
+
+[Thu Jul  9 10:53:37 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LB6279AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LB6279AA_AS.tab
+    jobid: 50
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_LB6279AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LB6279AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LB6279AA_AS.tab
+
+[Thu Jul  9 10:53:37 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4070AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4070AA_AS.tab
+    jobid: 18
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4070AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4070AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4070AA_AS.tab
+
+[Thu Jul  9 10:53:37 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4067AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4067AA_AS.tab
+    jobid: 42
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4067AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4067AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4067AA_AS.tab
+
+[Thu Jul  9 10:53:37 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA2840AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LA2840AA_AS.tab
+    jobid: 52
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_LA2840AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA2840AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LA2840AA_AS.tab
+
+[Thu Jul  9 10:53:37 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4048AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4048AA_AS.tab
+    jobid: 12
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4048AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4048AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4048AA_AS.tab
+
+[Thu Jul  9 10:53:37 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4068AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4068AA_AS.tab
+    jobid: 43
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4068AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4068AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4068AA_AS.tab
+
+[Thu Jul  9 10:53:37 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_GA5350AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_GA5350AA_AS.tab
+    jobid: 29
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_GA5350AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_GA5350AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_GA5350AA_AS.tab
+
+[Thu Jul  9 10:53:37 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4071AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4071AA_AS.tab
+    jobid: 24
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4071AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4071AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4071AA_AS.tab
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3973AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_MA2736AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4056AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LB6278AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3971AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4061AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4063AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4004AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6413AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA2848AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4070AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LB6279AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3980AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3982AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4067AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA2840AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_GA5350AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4048AA_AS.fasta
+Found 52 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4004AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4068AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4071AA_AS.fasta
+[Thu Jul  9 10:53:39 2020]
+Finished job 1.
+21 of 55 steps (38%) done
+Found 54 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4063AA_AS.fasta
+[Thu Jul  9 10:53:39 2020]
+Finished job 15.
+22 of 55 steps (40%) done
+Found 61 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4061AA_AS.fasta
+Found 51 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA2848AA_AS.fasta
+Found 59 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3973AA_AS.fasta
+Found 45 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_MA2736AA_AS.fasta
+[Thu Jul  9 10:53:39 2020]
+Finished job 14.
+23 of 55 steps (42%) done
+Found 69 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3971AA_AS.fasta
+Found 56 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4056AA_AS.fasta
+[Thu Jul  9 10:53:39 2020]
+Finished job 51.
+24 of 55 steps (44%) done
+[Thu Jul  9 10:53:39 2020]
+Finished job 36.
+25 of 55 steps (45%) done
+[Thu Jul  9 10:53:39 2020]
+Finished job 40.
+26 of 55 steps (47%) done
+Found 86 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6413AA_AS.fasta
+[Thu Jul  9 10:53:39 2020]
+Finished job 21.
+27 of 55 steps (49%) done
+[Thu Jul  9 10:53:39 2020]
+Finished job 49.
+28 of 55 steps (51%) done
+[Thu Jul  9 10:53:39 2020]
+Finished job 5.
+29 of 55 steps (53%) done
+Found 57 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LB6278AA_AS.fasta
+[Thu Jul  9 10:53:39 2020]
+Finished job 38.
+30 of 55 steps (55%) done
+
+[Thu Jul  9 10:53:40 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4045AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4045AA_AS.tab
+    jobid: 41
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4045AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4045AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4045AA_AS.tab
+
+[Thu Jul  9 10:53:40 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4005AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4005AA_AS.tab
+    jobid: 45
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4005AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4005AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4005AA_AS.tab
+
+[Thu Jul  9 10:53:40 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4055AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4055AA_AS.tab
+    jobid: 13
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4055AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4055AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4055AA_AS.tab
+
+[Thu Jul  9 10:53:40 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4003AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4003AA_AS.tab
+    jobid: 33
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4003AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4003AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4003AA_AS.tab
+Found 55 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3980AA_AS.fasta
+
+Found 50 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3982AA_AS.fasta
+[Thu Jul  9 10:53:40 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6411AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6411AA_AS.tab
+    jobid: 27
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_HA6411AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6411AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6411AA_AS.tab
+
+[Thu Jul  9 10:53:40 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3974AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3974AA_AS.tab
+    jobid: 16
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA3974AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3974AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3974AA_AS.tab
+[Thu Jul  9 10:53:40 2020]
+Finished job 54.
+31 of 55 steps (56%) done
+
+[Thu Jul  9 10:53:40 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4000AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4000AA_AS.tab
+    jobid: 2
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4000AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4000AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4000AA_AS.tab
+[Thu Jul  9 10:53:40 2020]
+Finished job 22.
+32 of 55 steps (58%) done
+Found 51 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4070AA_AS.fasta
+
+[Thu Jul  9 10:53:40 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_IA3651AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_IA3651AA_AS.tab
+    jobid: 37
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_IA3651AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_IA3651AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_IA3651AA_AS.tab
+
+[Thu Jul  9 10:53:40 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4069AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4069AA_AS.tab
+    jobid: 26
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4069AA_AS
+
+[Thu Jul  9 10:53:40 2020]
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4069AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4069AA_AS.tab
+Finished job 18.
+33 of 55 steps (60%) done
+
+[Thu Jul  9 10:53:40 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4072AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4072AA_AS.tab
+    jobid: 53
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4072AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4072AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4072AA_AS.tab
+Found 55 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA2840AA_AS.fasta
+[Thu Jul  9 10:53:40 2020]
+Finished job 52.
+34 of 55 steps (62%) done
+Found 53 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4068AA_AS.fasta
+Found 70 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_GA5350AA_AS.fasta
+[Thu Jul  9 10:53:40 2020]
+Finished job 43.
+35 of 55 steps (64%) done
+Found 54 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4067AA_AS.fasta
+[Thu Jul  9 10:53:40 2020]
+Finished job 29.
+36 of 55 steps (65%) done
+[Thu Jul  9 10:53:40 2020]
+Finished job 42.
+37 of 55 steps (67%) done
+Found 68 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4048AA_AS.fasta
+[Thu Jul  9 10:53:40 2020]
+Finished job 12.
+38 of 55 steps (69%) done
+Found 55 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4071AA_AS.fasta
+[Thu Jul  9 10:53:40 2020]
+Finished job 24.
+39 of 55 steps (71%) done
+Found 59 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LB6279AA_AS.fasta
+[Thu Jul  9 10:53:40 2020]
+Finished job 50.
+40 of 55 steps (73%) done
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+
+[Thu Jul  9 10:53:41 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4035AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4035AA_AS.tab
+    jobid: 23
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4035AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4035AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4035AA_AS.tab
+
+[Thu Jul  9 10:53:41 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3999AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3999AA_AS.tab
+    jobid: 39
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA3999AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3999AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3999AA_AS.tab
+
+[Thu Jul  9 10:53:41 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4046AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4046AA_AS.tab
+    jobid: 19
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_NA4046AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4046AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4046AA_AS.tab
+
+[Thu Jul  9 10:53:41 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA1124AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LA1124AA_AS.tab
+    jobid: 9
+    wildcards: output_prefix=HC50_1106, gene_db=pAVC171-IncF, sample=ESC_LA1124AA_AS
+
+abricate --nopath --datadir /home/malcummi/Data/miniconda3/envs/abricate/db --db pAVC171-IncF /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA1124AA_AS.fasta > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LA1124AA_AS.tab
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4045AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4005AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4003AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4055AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6411AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3974AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4000AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_IA3651AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4072AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4069AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Activating conda environment: /data/malcummi/pipelord/abricatelord/.snakemake/conda/d9967e62
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3999AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA1124AA_AS.fasta
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4035AA_AS.fasta
+Using nucl database pAVC171-IncF:  1 sequences -  2020-Jul-9
+Processing: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4046AA_AS.fasta
+Found 54 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4045AA_AS.fasta
+Found 58 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4005AA_AS.fasta
+[Thu Jul  9 10:53:42 2020]
+Finished job 41.
+41 of 55 steps (75%) done
+Found 57 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4055AA_AS.fasta
+[Thu Jul  9 10:53:42 2020]
+Finished job 45.
+42 of 55 steps (76%) done
+Found 49 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_IA3651AA_AS.fasta
+Found 51 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4003AA_AS.fasta
+[Thu Jul  9 10:53:42 2020]
+Finished job 13.
+43 of 55 steps (78%) done
+Found 50 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_HA6411AA_AS.fasta
+Found 51 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3974AA_AS.fasta
+[Thu Jul  9 10:53:42 2020]
+Finished job 37.
+44 of 55 steps (80%) done
+[Thu Jul  9 10:53:42 2020]
+Finished job 33.
+45 of 55 steps (82%) done
+[Thu Jul  9 10:53:42 2020]
+Finished job 27.
+46 of 55 steps (84%) done
+Found 52 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4072AA_AS.fasta
+[Thu Jul  9 10:53:42 2020]
+Finished job 16.
+47 of 55 steps (85%) done
+Found 58 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4000AA_AS.fasta
+Found 56 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4069AA_AS.fasta
+[Thu Jul  9 10:53:42 2020]
+Finished job 53.
+48 of 55 steps (87%) done
+[Thu Jul  9 10:53:42 2020]
+Finished job 2.
+49 of 55 steps (89%) done
+[Thu Jul  9 10:53:42 2020]
+Finished job 26.
+50 of 55 steps (91%) done
+Found 32 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4046AA_AS.fasta
+[Thu Jul  9 10:53:43 2020]
+Finished job 19.
+51 of 55 steps (93%) done
+Found 56 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA4035AA_AS.fasta
+[Thu Jul  9 10:53:43 2020]
+Finished job 23.
+52 of 55 steps (95%) done
+Found 47 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_LA1124AA_AS.fasta
+[Thu Jul  9 10:53:43 2020]
+Finished job 9.
+53 of 55 steps (96%) done
+Found 59 genes in /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106/ESC_NA3999AA_AS.fasta
+[Thu Jul  9 10:53:43 2020]
+Finished job 39.
+54 of 55 steps (98%) done
+
+[Thu Jul  9 10:53:43 2020]
+localrule all:
+    input: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4004AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4000AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6418AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8250AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6413AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_BA8511AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_VA0598AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3992AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LA1124AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8312AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8291AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4048AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4055AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LA2848AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4063AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3974AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_IA0811AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4070AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4046AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4064AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3971AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3982AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4035AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4071AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6420AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4069AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6411AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6342AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_GA5350AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HB8007AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4052AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4066AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4003AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8296AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3975AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3973AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_IA3651AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LB6278AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3999AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_MA2736AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4045AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4067AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4068AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4053AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4005AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_GB6943AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_SA8273AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_HA6332AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4056AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LB6279AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4061AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_LA2840AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA4072AA_AS.tab, /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106/pAVC171-IncF/ESC_NA3980AA_AS.tab
+    jobid: 0
+
+[Thu Jul  9 10:53:43 2020]
+Finished job 0.
+55 of 55 steps (100%) done
+Complete log: /data/malcummi/pipelord/abricatelord/.snakemake/log/2020-07-09T105324.506883.snakemake.log
+['ESC_NA4004AA_AS', 'ESC_NA4000AA_AS', 'ESC_HA6418AA_AS', 'ESC_SA8250AA_AS', 'ESC_HA6413AA_AS', 'ESC_BA8511AA_AS', 'ESC_VA0598AA_AS', 'ESC_NA3992AA_AS', 'ESC_LA1124AA_AS', 'ESC_SA8312AA_AS', 'ESC_SA8291AA_AS', 'ESC_NA4048AA_AS', 'ESC_NA4055AA_AS', 'ESC_LA2848AA_AS', 'ESC_NA4063AA_AS', 'ESC_NA3974AA_AS', 'ESC_IA0811AA_AS', 'ESC_NA4070AA_AS', 'ESC_NA4046AA_AS', 'ESC_NA4064AA_AS', 'ESC_NA3971AA_AS', 'ESC_NA3982AA_AS', 'ESC_NA4035AA_AS', 'ESC_NA4071AA_AS', 'ESC_HA6420AA_AS', 'ESC_NA4069AA_AS', 'ESC_HA6411AA_AS', 'ESC_HA6342AA_AS', 'ESC_GA5350AA_AS', 'ESC_HB8007AA_AS', 'ESC_NA4052AA_AS', 'ESC_NA4066AA_AS', 'ESC_NA4003AA_AS', 'ESC_SA8296AA_AS', 'ESC_NA3975AA_AS', 'ESC_NA3973AA_AS', 'ESC_IA3651AA_AS', 'ESC_LB6278AA_AS', 'ESC_NA3999AA_AS', 'ESC_MA2736AA_AS', 'ESC_NA4045AA_AS', 'ESC_NA4067AA_AS', 'ESC_NA4068AA_AS', 'ESC_NA4053AA_AS', 'ESC_NA4005AA_AS', 'ESC_GB6943AA_AS', 'ESC_SA8273AA_AS', 'ESC_HA6332AA_AS', 'ESC_NA4056AA_AS', 'ESC_LB6279AA_AS', 'ESC_NA4061AA_AS', 'ESC_LA2840AA_AS', 'ESC_NA4072AA_AS', 'ESC_NA3980AA_AS']
+/home/malcummi/Data/miniconda3/envs/abricate/db
+['pAVC171-IncF']

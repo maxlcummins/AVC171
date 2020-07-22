@@ -23,17 +23,22 @@ nohup snakemake -j --use-conda  -p > /data/malcummi/Manuscripts/2020/AVC171/AVC1
 cp ~/Data/pipelord/abricatelord/config/abricate.yaml /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/abricate
 cp ~/Data/pipelord/abricatelord/Snakefile /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/snakefiles/abricate/
 
-#Made a new directory for the non-AVC171 strains, as well as one for AVC171, to facilitate running snplord
-mkdir HC50_1106_noref
-mkdir ref
-cp HC50_1106/* HC50_1106_noref/
-mv HC50_1106_noref/AVC171.fasta ./AVC171
+#Concatenate abricate output files (when abricate has finished)
+cd /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate
+cat */* > abricate.txt
+
 
 #########################################################################################################################
 ###################### Snippy and phylogenetic trees ####################################################################
 #########################################################################################################################
 
 #A config file was created at "/data/malcummi/Manuscripts/2020/AVC171/AVC171/logs/abricate/config.yaml" which contained the paths to genomic assemblies, etc
+
+#Made a new directory for the non-AVC171 strains, as well as one for AVC171, to facilitate running snplord
+mkdir HC50_1106_noref
+mkdir ref
+cp HC50_1106/* HC50_1106_noref/
+mv HC50_1106_noref/AVC171.fasta ./AVC171
 
 # Made a new directory for the log files for nohup: snplord
 mkdir /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy
@@ -50,3 +55,46 @@ cp ~/Data/pipelord/snplord/config_files/gubbins.yaml /home/malcummi/Data/Manuscr
 cp ~/Data/pipelord/snplord/config_files/snp_dists.yaml /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy
 cp ~/Data/pipelord/snplord/config_files/snippy.yaml /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy
 cp ~/Data/pipelord/snplord/Snakefile_assemblies-j /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/snakefiles/snippy/
+
+#Snplord was rerun as I accidentally included AVC171 twice.
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_assemblies-j  -j --use-conda -p > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy/nohup_snplord_HC50-1106.out &
+#jobID=9732
+
+#########################################################################################################################
+###################### Pointfinder  #####################################################################################
+#########################################################################################################################
+
+#change directory to assemblies
+cd /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/assemblies/HC50_1106
+mkdir /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/pointfinder
+
+#Make a directory for the output of pointfinder for each assembly
+for f in *.fasta;
+do mkdir /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/pointfinder/${f/\.fasta/};
+done
+
+#run pointfinder on each assembly
+for f in *.fasta;
+do /home/malcummi/Data/pointfinder/PointFinder.py -i $f -o /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/pointfinder/${f/\.fasta/} -p /home/malcummi/Data/pointfinder/pointfinder_db -s escherichia_coli -m blastn -m_p /usr/local/ncbi-blast-ihpc-2.8.1+/bin/blastn;
+done
+
+#concatenate and label the pointfinder output for each strain with the strain name
+cd /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/pointfinder/
+for f in */*.tsv; do awk 'NR == 1 {print $0 "\tname_file"; next;}{print $0 "\t" FILENAME;}' $f; done > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/pointfinder/pointfinder_results_tmp.txt
+awk 'FNR==1 { header = $0; print } $0 != header' pointfinder_results_tmp.txt > pointfinder_results.txt
+rm pointfinder_results_tmp.txt
+
+#########################################################################################################################
+###################### Abricate #########################################################################################
+#########################################################################################################################
+
+#The config file was updated to include a new fasta database made with pAVC171-IncF
+# at "/data/malcummi/Manuscripts/2020/AVC171/AVC171/logs/abricate/config.yaml" which contained the paths to genomic assemblies, etc
+
+#Snakemake was used to run abricatelord
+cd ~/Data/pipelord/abricatelord
+nohup snakemake -j --use-conda  -p > /data/malcummi/Manuscripts/2020/AVC171/AVC171/logs/abricate/nohup_abricatelord_plasmid_HC50-1106.out &
+
+cd /data/malcummi/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106
+cat pAVC171-IncF/* > pAVC171_IncF_abricate.txt
