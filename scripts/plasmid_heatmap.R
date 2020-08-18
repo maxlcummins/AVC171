@@ -141,7 +141,7 @@ start_coord <- data.frame(name = new_df$name, gene = new_df$GENE,
                           chunk47 = sapply(spl, "[", 47),
                           chunk48 = sapply(spl, "[", 48),
                           chunk49 = sapply(spl, "[", 49),
-                          chunk0= sapply(spl, "[", 50),
+                          chunk50= sapply(spl, "[", 50),
                           chunk51 = sapply(spl, "[", 51),
                           chunk52 = sapply(spl, "[", 52),
                           chunk53 = sapply(spl, "[", 53),
@@ -219,7 +219,7 @@ end_coord <- data.frame(name = new_df$name, gene = new_df$GENE,
                         chunk47 = sapply(spl, "[", 47),
                         chunk48 = sapply(spl, "[", 48),
                         chunk49 = sapply(spl, "[", 49),
-                        chunk0= sapply(spl, "[", 50),
+                        chunk50= sapply(spl, "[", 50),
                         chunk51 = sapply(spl, "[", 51),
                         chunk52 = sapply(spl, "[", 52),
                         chunk53 = sapply(spl, "[", 53),
@@ -255,7 +255,7 @@ unique(coords$length_gene)
 
 coords$start <- as.numeric(coords$start)
 coords$end <- as.numeric(coords$end)
-coords$length_gene <- as.numeric(levels(coords$length_gene))[coords$length_gene]
+coords$length_gene <- as.numeric(coords$length_gene)
 
 
 coords$percentage <-  (((coords$end-coords$start)+1)/coords$length_gene)*100
@@ -326,8 +326,7 @@ df$Coverage_percentage <- as.numeric(df$Coverage_percentage)
 
 final_table <- dcast(df, name ~ GENE)
 
-final_final_table <- final_table
-[1:nrow(final_table),2:ncol(final_table)]
+final_final_table <- final_table[1:nrow(final_table),2:ncol(final_table)]
 
 final_final_table_2 <- final_final_table
 
