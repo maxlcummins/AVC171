@@ -173,14 +173,47 @@ df <- df %>% select(-starts_with("card_acr"),
 df <- df %>% select(-starts_with("EC_custom_malX"),
               -starts_with("EC_custom_VGI"),
               -starts_with("EC_custom_malX"),
-              -starts_with("EC_custom_yeeT"))
+              -starts_with("EC_custom_yeeT"),
+              -starts_with("EC_custom_pap"),
+              -starts_with("EC_custom_iu[tA|cD]"),
+              -starts_with("EC_custom_irp"),
+              -starts_with("EC_custom_pap"),
+              -starts_with("EC_custom_fim"),)
 
-df <- df %>% select(-starts_with("ISfinder_Feb_2020"),
-                    ISfinder_Feb_2020_IS26.X00011,
-                    ISfinder_Feb_2020_IS15DII.M12900,
-                    starts_with
-              
-              
+df <- df %>% select(-starts_with("ISfinder_Feb_2020"))
+
+df <- df %>% select(-starts_with("vfdb_chu"),
+                    -starts_with("vfdb_ent"),
+                    -starts_with("vfdb_chu"),
+                    -starts_with("vfdb_fepB|C|D"),
+                    -starts_with("vfdb_chu"),
+                    -starts_with("vfdb_fimA|B|C|D|E|F|G|I"),
+                    -starts_with("vfdb_gsp[D-M]"),
+                    -starts_with("vfdb_iro[B-D]"),
+                    -starts_with("vfdb_iuc[ABC]"),
+                    -starts_with("vfdb_iro[B-D]"),
+                    -starts_with("vfdb_pap[DEFHIJKX]"),
+                    -starts_with("vfdb_sfa[ABCDEFGHXY]"),
+                    -starts_with("vfdb_yag[WXYZ]"),
+                    -starts_with("vfdb_ybt[EPQSTUX]"),
+                    -starts_with("vfdb_ykgK"))
+
+df <- df %>% select(-matches("vfdb_chu"),
+                    -matches("vfdb_ent"),
+                    -matches("vfdb_chu"),
+                    -matches("vfdb_fep[BCD]"),
+                    -matches("vfdb_chu"),
+                    -matches("vfdb_fim[ABCDEFGI]"),
+                    -matches("vfdb_gsp[D-M]"),
+                    -matches("vfdb_iro[B-D]"),
+                    -matches("vfdb_iuc[ABC]"),
+                    -matches("vfdb_iro[B-D]"),
+                    -matches("vfdb_pap[DEFHIJKX]"),
+                    -matches("vfdb_sfa[ABCDEFGHXY]"),
+                    -matches("vfdb_yag[WXYZ]"),
+                    -matches("vfdb_ybt[EPQSTUX]"),
+                    -matches("vfdb_ykgK"))
+
 
 df$ColV[df$ColV > 0] <- 3
 
