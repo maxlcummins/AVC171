@@ -98,3 +98,77 @@ nohup snakemake -j --use-conda  -p > /data/malcummi/Manuscripts/2020/AVC171/AVC1
 
 cd /data/malcummi/Manuscripts/2020/AVC171/AVC171/analysis/abricate/HC50_1106
 cat pAVC171-IncF/* > pAVC171_IncF_abricate.txt
+
+#########################################################################################################################
+###################### New Sample Download ##############################################################################
+#########################################################################################################################
+
+#additional ~721 strains of ST95 to be downloaded from enterobase to provide phylogenetic context for our strains
+#Subsetted down further to strains with <= 50000 'Low Quality Bases' according to Enterobase assembly stats
+cd ~/Data/tools/EnterobaseGenomeAssemblyDownload
+nohup python2 EnterobaseGenomeAssemblyDownload.py -d ecoli -l ~/Data/Manuscripts/2020/AVC171/AVC171/delims/metadata_subset.txt -o ~/Data/Manuscripts/2020/AVC171/AVC171/assemblies/ST95_enterobase_subset > ~/Data/Manuscripts/2020/AVC171/AVC171/logs/Enterobase_dl_ST95_20-7-20.out 2> ~/Data/Manuscripts/2020/AVC171/AVC171/logs/Enterobase_dl_ST95_20-7-20.err &
+##JobID = 57985
+nohup python2 EnterobaseGenomeAssemblyDownload.py -d ecoli -l ~/Data/Manuscripts/2020/AVC171/AVC171/delims/metadata_subset_minus_first_400.txt -o ~/Data/Manuscripts/2020/AVC171/AVC171/assemblies/ST95_enterobase_subset > ~/Data/Manuscripts/2020/AVC171/AVC171/logs/Enterobase_dl_ST95_20-7-20_minus_first_400.out 2> ~/Data/Manuscripts/2020/AVC171/AVC171/logs/Enterobase_dl_ST95_20-7-20_minus_first_400.err &
+##JobID = 222517
+
+#########################################################################################################################
+###################### More snplord #####################################################################################
+#########################################################################################################################
+
+#Snplord was rerun on the HC50_1106 collection as with the AVC171 chromosome instead of the genome
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_assemblies-j  -j --use-conda -p > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy/nohup_snplord_HC50-1106_AVC171_chromosome.out &
+
+
+#Snplord was rerun on the full collection of ST95 subset and HC50_1106 with the AVC171 chromosome as a reference
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_assemblies-j  -j --use-conda -p > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy/nohup_AVC171_chromosome_ST95_enterobase_and_HC50_1106.out &
+#jobID=50561
+
+#########################################################################################################################
+###################### More abricate ####################################################################################
+#########################################################################################################################
+
+#A config file was created at "/data/malcummi/Manuscripts/2020/AVC171/AVC171/logs/abricate/config.yaml" which contained the paths to genomic assemblies, etc
+#This run was performed to generate abricate data on the additional ST95 strains in the collection, however the whole process was rerun to keep only a single abricate file for analysis
+
+#Snakemake was used to run abricatelord
+cd ~/Data/pipelord/abricatelord
+nohup snakemake -j --use-conda  -p > /data/malcummi/Manuscripts/2020/AVC171/AVC171/logs/abricate/nohup_abricatelord_all.out &
+#jobid = 141535
+
+#Concatenate abricate output files (when abricate has finished)
+cd /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/ST95_all
+cat */* > abricate.txt
+
+#########################################################################################################################
+###################### More Pointfinder  ################################################################################
+#########################################################################################################################
+
+#A Snakefile was made for pointfinder analysis
+#it was run as follows, without nohup:
+cd ~/Data/pipelord/pointfinderlord
+snakemake --use-conda -j
+
+#########################################################################################################################
+###################### Some strains were removed! #######################################################################
+#########################################################################################################################
+
+# Some strains were removed due to poor metadata
+cd /data/malcummi/Manuscripts/2020/AVC171/AVC171/assemblies/
+mv -f */ESC_IA3651AA_AS* */ESC_LA1124AA_AS* */ESC_LA2848AA_AS* */ESC_LA2840AA_AS* */ESC_MA2736AA_AS* hide
+mv -f */ESC_LB6278AA_AS* */ESC_LB6279AA_AS* hide
+
+#########################################################################################################################
+###################### More snippy! #####################################################################################
+#########################################################################################################################
+
+#Snplord was rerun after removing the strains above with crappy metadata.
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_assemblies-j  -j --use-conda -p > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy/nohup_AVC171_chromosome_ST95_enterobase_and_HC50_1106_rm_nometa.out &
+#jobID=39962
+
+#Snplord was rerun after removing the strains above with crappy metadata. This run was only for the HC50 strains.
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_assemblies-j  -j --use-conda -p > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy/nohup_AVC171_chromosome_rm_nometa.out &
+#jobID=32324

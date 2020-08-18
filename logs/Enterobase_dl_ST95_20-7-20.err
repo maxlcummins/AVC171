@@ -1,0 +1,25 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "EnterobaseGenomeAssemblyDownload.py", line 142, in <module>
+    response = urllib2.urlopen(__create_request(address))
+  File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python2.7/urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "/usr/lib64/python2.7/urllib2.py", line 449, in _open
+    '_open', req)
+  File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 1244, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/lib64/python2.7/urllib2.py", line 1217, in do_open
+    r = h.getresponse(buffering=True)
+  File "/usr/lib64/python2.7/httplib.py", line 1128, in getresponse
+    response.begin()
+  File "/usr/lib64/python2.7/httplib.py", line 453, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib64/python2.7/httplib.py", line 409, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/usr/lib64/python2.7/socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+socket.error: [Errno 110] Connection timed out
