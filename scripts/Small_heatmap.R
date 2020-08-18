@@ -132,6 +132,8 @@ Metadata$HC50_or_other <- gsub("^1106$*", "HC50-1106", Metadata$HC50)
 Metadata$HC50_or_other <-
         gsub("^[0-9].*", "Other", Metadata$HC50_or_other)
 
+HC50_1106_simple_summary_N90L90 <- HC50_1106_simple_summary_N90L90 %>% filter(name %in% tree$tip.label)
+
 df <- HC50_1106_simple_summary_N90L90
 
 df <- df %>% select(ColV, everything(), -name)
@@ -144,45 +146,101 @@ colsum <- cbind(colnames(df),colSums(df)) %>% as.data.frame()
 
 colsum$V2 <- as.numeric(colsum$V2)
 
-df <- data.frame(lapply(df, as.character), stringsAsFactors=FALSE)
+df <- data.frame(lapply(df, as.numeric), stringsAsFactors=FALSE)
+
+df <- df[, colSums(df != 0) > 0]
 
 #Remove unwanted AMR genes from card
 df <- df %>% select(-starts_with("card_acr"),
-              -starts_with("card_bac"),
-              -starts_with("card_bae"),
-              -starts_with("card_cpxA"),
-              -starts_with("card_CRP"),
-              -starts_with("card_emr"),
-              -starts_with("card_eptA"),
-              -starts_with("card_Escherichia_coli_acrA"),
-              -starts_with("card_Escherichia_coli_amp"),
-              -starts_with("card_Escherichia_coli_emrE"),
-              -starts_with("card_Escherichia_coli_mdfA"),
-              -starts_with("card_evg"),
-              -starts_with("card_gad"),
-              -starts_with("card_H-NS"),
-              -starts_with("card_kdpE"),
-              -starts_with("card_marA"),
-              -starts_with("card_mdt"),
-              -starts_with("card_msbA"),
-              -starts_with("card_pmrF"),
-              -starts_with("card_tolC"),
-              -starts_with("card_ugd"),
-              -starts_with("card_yoj"))
+                    -starts_with("card_bac"),
+                    -starts_with("card_bae"),
+                    -starts_with("card_cpxA"),
+                    -starts_with("card_CRP"),
+                    -starts_with("card_emr"),
+                    -starts_with("card_eptA"),
+                    -starts_with("card_Escherichia_coli_acrA"),
+                    -starts_with("card_Escherichia_coli_amp"),
+                    -starts_with("card_Escherichia_coli_emrE"),
+                    -starts_with("card_Escherichia_coli_mdfA"),
+                    -starts_with("card_evg"),
+                    -starts_with("card_gad"),
+                    -starts_with("card_H-NS"),
+                    -starts_with("card_kdpE"),
+                    -starts_with("card_marA"),
+                    -starts_with("card_mdt"),
+                    -starts_with("card_msbA"),
+                    -starts_with("card_pmrF"),
+                    -starts_with("card_tolC"),
+                    -starts_with("card_ugd"),
+                    -starts_with("card_yoj"))
 
 df <- df %>% select(-starts_with("EC_custom_malX"),
-              -starts_with("EC_custom_VGI"),
-              -starts_with("EC_custom_malX"),
-              -starts_with("EC_custom_yeeT"))
+                    -starts_with("EC_custom_VGI"),
+                    -starts_with("EC_custom_malX"),
+                    -starts_with("EC_custom_yeeT"),
+                    -starts_with("EC_custom_pap"),
+                    -starts_with("EC_custom_iu[tA|cD]"),
+                    -starts_with("EC_custom_irp"),
+                    -starts_with("EC_custom_pap"),
+                    -starts_with("EC_custom_fim"),)
 
-df <- df %>% select(-starts_with("ISfinder_Feb_2020"),
-                    ISfinder_Feb_2020_IS26.X00011,
-                    ISfinder_Feb_2020_IS15DII.M12900,
-                    starts_with
-              
-              
+df <- df %>% select(-starts_with("ISfinder_Feb_2020"))
 
-df$ColV[df$ColV > 0] <- 3
+df <- df %>% select(-starts_with("vfdb_chu"),
+                    -starts_with("vfdb_ent"),
+                    -starts_with("vfdb_chu"),
+                    -starts_with("vfdb_fepB|C|D"),
+                    -starts_with("vfdb_chu"),
+                    -starts_with("vfdb_fimA|B|C|D|E|F|G|I"),
+                    -starts_with("vfdb_gsp[D-M]"),
+                    -starts_with("vfdb_iro[B-D]"),
+                    -starts_with("vfdb_iuc[ABC]"),
+                    -starts_with("vfdb_iro[B-D]"),
+                    -starts_with("vfdb_pap[DEFHIJKX]"),
+                    -starts_with("vfdb_sfa[ABCDEFGHXY]"),
+                    -starts_with("vfdb_yag[WXYZ]"),
+                    -starts_with("vfdb_ybt[EPQSTUX]"),
+                    -starts_with("vfdb_ykgK"))
+
+df <- df %>% select(-matches("vfdb_chu"),
+                    -matches("vfdb_ent"),
+                    -matches("vfdb_chu"),
+                    -matches("vfdb_fep[BCD]"),
+                    -matches("vfdb_chu"),
+                    -matches("vfdb_fim[ABCDEFGI]"),
+                    -matches("vfdb_gsp[D-M]"),
+                    -matches("vfdb_iro[B-D]"),
+                    -matches("vfdb_iuc[ABC]"),
+                    -matches("vfdb_iro[B-D]"),
+                    -matches("vfdb_pap[DEFHIJKX]"),
+                    -matches("vfdb_sfa[ABCDEFGHXY]"),
+                    -matches("vfdb_yag[WXYZ]"),
+                    -matches("vfdb_ybt[EPQSTUX]"),
+                    -matches("vfdb_ykgK"))
+
+colnames(df) <- gsub("EC_custom_merA.*", "res_merA", colnames(df))
+colnames(df) <- gsub("EC_custom_terA.*", "res_terA", colnames(df))
+colnames(df) <- gsub("EC_custom_intI1.*", "res_intI1", colnames(df))
+colnames(df) <- gsub("EC_custom_", "vir_", colnames(df))
+
+colnames(df) <-gsub("card_", "res_", colnames(df))
+colnames(df) <-gsub("vfdb_", "vir_", colnames(df))
+colnames(df) <-gsub("plasmidfinder_", "plas_", colnames(df))
+
+r <- df %>% select(starts_with("res_"))
+p <- df %>% select(starts_with("plas_"))
+cv <- df %>% select(starts_with("ColV"))
+v <- df %>% select(starts_with("vir_"))
+
+p[p == 1] <- 2
+v[v == 1] <- 3
+cv[cv == 1] <- 4
+
+df <- cbind(cv,r,p,v)
+
+colnames(df) <- gsub("(res|vir|plas)_","",colnames(df))
+
+df <- data.frame(lapply(df, as.character), stringsAsFactors=FALSE)
 
 rownames(df) <- HC50_1106_simple_summary_N90L90$name
 
@@ -195,13 +253,15 @@ p <- ggtree(tree) %<+%
 #geom_tippoint(size = 3, aes = (color = HC50_or_other))
 
 colval <- c("white", #0
-            "red", #1
-            "purple", #3
+            "violet", #1
+            "blue", #2
+            "red", #3
+            "purple", #4
             #"brown", # Bovine
             "gold", # Canine
-          # "green", # Environment
+            # "green", # Environment
             "blue", # Human
-           # "black", #Other
+            # "black", #Other
             "red" # Poultry
             # "grey" #?
 )
@@ -230,8 +290,8 @@ gheatmap(
         geom_tiplab(aes(image = Flag), geom="image", size = 0.01, align = TRUE, linetype = NULL, offset = 0.120
         ) +
         geom_tiplab(aes(image = Revised_Source_Niche_img), geom="image", size = 0.01, align = TRUE, linetype = NULL, offset = 0.1325
-            ) +
+        ) +
         geom_tiplab(aes(image = Pathogen_img), geom="image", size = 0.01, align = TRUE, linetype = NULL, offset = 0.1450
-                    ) 
+        ) 
 
 #
