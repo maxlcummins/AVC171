@@ -27,9 +27,9 @@ path_to_repo <-
 #Changes working directory
 setwd(path_to_repo)
 
-path_to_tree <- "analysis/snippy/HC50_1106/fasttree/AVC171.clean.fullcore.tree"
+path_to_tree <- "analysis/snippy/AVC171_chromosome_ST95_enterobase_and_HC50_1106_rm_nometa/fasttree/AVC171_chromosome.clean.fullcore.tree"
 
-path_to_pais <- "analysis/abricate/HC50_1106/pAVC171_IncF_abricate.txt"
+path_to_pais <- "analysis/abricate/ST95_all/pAVC171_abricate.txt"
 
 #Read in the abricate genotype data sheet (small number of rows for colname reassignment)
 pais_df <-
@@ -264,6 +264,8 @@ test <- coords# %>% filter(name == "SAL_AB7542AA_AS", gene == "SPI-12_NC_006905_
 
 list_ <- NULL
 
+counter <- 1
+
 for(sample in unique(test$name)){
         test2 <- test %>% filter(name == sample)
         for(gene_ in unique(test$gene)){
@@ -280,11 +282,15 @@ for(sample in unique(test$name)){
                 }
                 newline <- c(sample, range_matrix)
                 list_ <- rbind(list_,newline)
+                print(paste("another loop", counter))
+                counter <- counter + 1
         }
         
 }
 
 list_2 <- as.data.frame(list_, stringsAsFactors = FALSE)
+
+rm(list_)
 
 base_ <- as.data.frame(list_2[,1:2])
 
@@ -296,7 +302,7 @@ listy_ <- NULL
 
 x <- 1
 
-for(i in 1:54){
+for(i in 1:nrow(new_df)){
         d <- unlist(list_2[i,2:ncol(list_2)])
         bins <- split(d, ceiling(seq_along(d)/100))
         bins <- lapply(bins, as.numeric)
@@ -307,11 +313,25 @@ for(i in 1:54){
         
 }
 
-listy_ <- rbind(listy_, rep(x = 100, times = ncol(listy_)))
+#listy_ <- rbind(listy_, rep(x = 100, times = ncol(listy_)))
+listy_ <- listy_[1:676,]
+rownames(listy_) <- c(list_2$V1)#,"AVC171")
 
-rownames(listy_) <- c(list_2$V1,"AVC171")
+df6 <- as.data.frame(rowSums(listy_))
 
-pheatmap(listy_, cluster_cols = FALSE, fontsize_col = 2)
+df6$working_names <- rownames(df6)
+
+colnames(df6) <- c("ColV_percent_hit","working_name")
+
+df6$ColV_percent_hit <- round((df6$ColV_percent_hit/144998) * 100)
+
+#df6$working_name <- rownames(df6)
+
+
+
+#df6$working_name
+
+pheatmap(listy_, cluster_cols = FALSE, fontsize_col = 1)
 
 
 abc <- length(list_)/3
