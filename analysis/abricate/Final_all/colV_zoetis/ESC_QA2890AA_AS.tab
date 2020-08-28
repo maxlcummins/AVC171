@@ -1,0 +1,17 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_QA2890AA_AS.fasta	NODE_162_length_10050_cov_22.9162	408	1571	+	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+ESC_QA2890AA_AS.fasta	NODE_162_length_10050_cov_22.9162	1585	5370	+	iroC	1-3786/3786	===============	0/0	100.00	99.84	colV_zoetis		iroC	
+ESC_QA2890AA_AS.fasta	NODE_162_length_10050_cov_22.9162	5474	6703	+	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+ESC_QA2890AA_AS.fasta	NODE_162_length_10050_cov_22.9162	6788	7744	+	iroE	1-957/957	===============	0/0	100.00	99.90	colV_zoetis		iroE	
+ESC_QA2890AA_AS.fasta	NODE_162_length_10050_cov_22.9162	7789	9966	+	iroN	1-2178/2178	===============	0/0	100.00	99.77	colV_zoetis		iroN	
+ESC_QA2890AA_AS.fasta	NODE_186_length_8235_cov_19.8275	19	1800	+	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+ESC_QA2890AA_AS.fasta	NODE_186_length_8235_cov_19.8275	1801	2748	+	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_QA2890AA_AS.fasta	NODE_186_length_8235_cov_19.8275	2748	4490	+	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_QA2890AA_AS.fasta	NODE_186_length_8235_cov_19.8275	4487	5764	+	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_QA2890AA_AS.fasta	NODE_186_length_8235_cov_19.8275	5846	8047	+	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+ESC_QA2890AA_AS.fasta	NODE_288_length_4694_cov_11.5981	187	1557	-	etsC	1-1371/1371	===============	0/0	100.00	100.00	colV_zoetis		etsC	
+ESC_QA2890AA_AS.fasta	NODE_288_length_4694_cov_11.5981	1561	3501	-	etsB	1-1941/1941	===============	0/0	100.00	99.95	colV_zoetis		etsB	
+ESC_QA2890AA_AS.fasta	NODE_288_length_4694_cov_11.5981	3498	3875	-	etsA	1-378/378	===============	0/0	100.00	98.94	colV_zoetis		etsA	
+ESC_QA2890AA_AS.fasta	NODE_320_length_3697_cov_20.4677	521	1356	-	sitC	1-837/837	========/======	1/1	99.88	99.40	colV_zoetis		sitC	
+ESC_QA2890AA_AS.fasta	NODE_320_length_3697_cov_20.4677	1353	2180	-	sitB	1-828/828	===============	0/0	100.00	100.00	colV_zoetis		sitB	
+ESC_QA2890AA_AS.fasta	NODE_320_length_3697_cov_20.4677	2180	3094	-	sitA	1-915/915	===============	0/0	100.00	99.13	colV_zoetis		sitA	

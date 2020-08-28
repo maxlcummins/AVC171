@@ -1,0 +1,24 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_19_length_95149_cov_55.603713	4086	5249	+	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_19_length_95149_cov_55.603713	5263	9048	+	iroC	1-3786/3786	===============	0/0	100.00	99.84	colV_zoetis		iroC	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_19_length_95149_cov_55.603713	9152	10381	+	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_19_length_95149_cov_55.603713	10466	11422	+	iroE	1-957/957	===============	0/0	100.00	100.00	colV_zoetis		iroE	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_19_length_95149_cov_55.603713	11467	13644	+	iroN	1-2178/2178	===============	0/0	100.00	99.95	colV_zoetis		iroN	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_19_length_95149_cov_55.603713	17921	18832	+	cvaA	1-912/912	===============	0/0	100.00	100.00	colV_zoetis		cvaA	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_19_length_95149_cov_55.603713	18807	20921	+	cvaB	1-2115/2115	===============	0/0	100.00	99.91	colV_zoetis		cvaB	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_19_length_95149_cov_55.603713	21091	21402	+	cvaC	1-312/312	===============	0/0	100.00	100.00	colV_zoetis		cvaC	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_19_length_95149_cov_55.603713	21380	21616	+	cvi	1-237/237	===============	0/0	100.00	100.00	colV_zoetis		cvi	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_33_length_23582_cov_74.396333	6529	7899	-	etsC	1-1371/1371	===============	0/0	100.00	100.00	colV_zoetis		etsC	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_33_length_23582_cov_74.396333	7903	9843	-	etsB	1-1941/1941	===============	0/0	100.00	99.95	colV_zoetis		etsB	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_33_length_23582_cov_74.396333	9840	10217	-	etsA	1-378/378	===============	0/0	100.00	98.94	colV_zoetis		etsA	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_33_length_23582_cov_74.396333	15309	16262	-	ompT	1-954/954	===============	0/0	100.00	100.00	colV_zoetis		ompT	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_33_length_23582_cov_74.396333	17023	18775	-	hlyF	1-1754/1754	========/======	1/1	99.94	99.37	colV_zoetis		hlyF	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_41_length_12525_cov_57.843039	3901	5682	+	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_41_length_12525_cov_57.843039	5683	6630	+	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_41_length_12525_cov_57.843039	6630	8372	+	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_41_length_12525_cov_57.843039	8369	9646	+	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_41_length_12525_cov_57.843039	9728	11929	+	iutA	1-2202/2202	===============	0/0	100.00	99.86	colV_zoetis		iutA	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_65_length_1440_cov_102.775324	228	1063	+	sitC	1-837/837	========/======	1/1	99.88	99.52	colV_zoetis		sitC	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_74_length_958_cov_117.184116	185	958	-	sitA	142-915/915	..=============	0/0	84.59	99.22	colV_zoetis		sitA	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_83_length_666_cov_64.701299	1	666	+	sitB	59-724/828	.=============.	0/0	80.43	100.00	colV_zoetis		sitB	
+ESC_IB6001AA_AS.fasta	ESC_IB6001AA_AS_NODE_84_length_666_cov_43.974026	1	666	-	sitB	59-724/828	.=============.	0/0	80.43	98.65	colV_zoetis		sitB	

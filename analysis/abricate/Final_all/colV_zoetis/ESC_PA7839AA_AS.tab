@@ -1,0 +1,18 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_PA7839AA_AS.fasta	NODE_111_length_8424_cov_3.71701	424	2625	-	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+ESC_PA7839AA_AS.fasta	NODE_111_length_8424_cov_3.71701	2707	3984	-	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_PA7839AA_AS.fasta	NODE_111_length_8424_cov_3.71701	3981	5723	-	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_PA7839AA_AS.fasta	NODE_111_length_8424_cov_3.71701	5723	6670	-	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_PA7839AA_AS.fasta	NODE_111_length_8424_cov_3.71701	6671	8424	-	iucA	29-1782/1782	===============	0/0	98.43	99.89	colV_zoetis		iucA	
+ESC_PA7839AA_AS.fasta	NODE_146_length_5049_cov_3.57863	464	1834	-	etsC	1-1371/1371	===============	0/0	100.00	100.00	colV_zoetis		etsC	
+ESC_PA7839AA_AS.fasta	NODE_146_length_5049_cov_3.57863	1838	3778	-	etsB	1-1941/1941	===============	0/0	100.00	99.95	colV_zoetis		etsB	
+ESC_PA7839AA_AS.fasta	NODE_146_length_5049_cov_3.57863	3775	4152	-	etsA	1-378/378	===============	0/0	100.00	98.94	colV_zoetis		etsA	
+ESC_PA7839AA_AS.fasta	NODE_6_length_133718_cov_6.55074	123847	124761	+	sitA	1-915/915	===============	0/0	100.00	98.25	colV_zoetis		sitA	
+ESC_PA7839AA_AS.fasta	NODE_6_length_133718_cov_6.55074	124761	125588	+	sitB	1-828/828	===============	0/0	100.00	98.91	colV_zoetis		sitB	
+ESC_PA7839AA_AS.fasta	NODE_6_length_133718_cov_6.55074	125585	126420	+	sitC	1-837/837	========/======	1/1	99.88	98.45	colV_zoetis		sitC	
+ESC_PA7839AA_AS.fasta	NODE_6_length_133718_cov_6.55074	126439	127296	+	sitD	1-858/858	===============	0/0	100.00	95.80	colV_zoetis		sitD	
+ESC_PA7839AA_AS.fasta	NODE_91_length_13093_cov_3.94516	119	2296	-	iroN	1-2178/2178	===============	0/0	100.00	99.77	colV_zoetis		iroN	
+ESC_PA7839AA_AS.fasta	NODE_91_length_13093_cov_3.94516	2341	3297	-	iroE	1-957/957	===============	0/0	100.00	100.00	colV_zoetis		iroE	
+ESC_PA7839AA_AS.fasta	NODE_91_length_13093_cov_3.94516	3382	4611	-	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+ESC_PA7839AA_AS.fasta	NODE_91_length_13093_cov_3.94516	4715	8500	-	iroC	1-3786/3786	===============	0/0	100.00	99.84	colV_zoetis		iroC	
+ESC_PA7839AA_AS.fasta	NODE_91_length_13093_cov_3.94516	8514	9677	-	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	

@@ -1,0 +1,12 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_NA3970AA_AS.fasta	NODE_64_length_15621_cov_19.4635	7524	8894	-	etsC	1-1371/1371	===============	0/0	100.00	100.00	colV_zoetis		etsC	
+ESC_NA3970AA_AS.fasta	NODE_64_length_15621_cov_19.4635	8898	10838	-	etsB	1-1941/1941	===============	0/0	100.00	99.95	colV_zoetis		etsB	
+ESC_NA3970AA_AS.fasta	NODE_64_length_15621_cov_19.4635	10835	11212	-	etsA	1-378/378	===============	0/0	100.00	98.94	colV_zoetis		etsA	
+ESC_NA3970AA_AS.fasta	NODE_66_length_12484_cov_17.8645	556	2757	-	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+ESC_NA3970AA_AS.fasta	NODE_66_length_12484_cov_17.8645	2839	4116	-	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_NA3970AA_AS.fasta	NODE_66_length_12484_cov_17.8645	4113	5855	-	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_NA3970AA_AS.fasta	NODE_66_length_12484_cov_17.8645	5855	6802	-	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_NA3970AA_AS.fasta	NODE_66_length_12484_cov_17.8645	6803	8584	-	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+ESC_NA3970AA_AS.fasta	NODE_84_length_2810_cov_43.0272	378	1213	-	sitC	1-837/837	========/======	1/1	99.88	98.45	colV_zoetis		sitC	
+ESC_NA3970AA_AS.fasta	NODE_84_length_2810_cov_43.0272	1210	2037	-	sitB	1-828/828	===============	0/0	100.00	100.00	colV_zoetis		sitB	
+ESC_NA3970AA_AS.fasta	NODE_84_length_2810_cov_43.0272	2037	2810	-	sitA	142-915/915	..=============	0/0	84.59	100.00	colV_zoetis		sitA	

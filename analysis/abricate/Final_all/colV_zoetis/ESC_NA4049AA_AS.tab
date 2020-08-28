@@ -1,0 +1,19 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_NA4049AA_AS.fasta	NODE_24_length_83346_cov_12.904	61526	61762	-	cvi	1-237/237	===============	0/0	100.00	100.00	colV_zoetis		cvi	
+ESC_NA4049AA_AS.fasta	NODE_24_length_83346_cov_12.904	61740	62051	-	cvaC	1-312/312	===============	0/0	100.00	100.00	colV_zoetis		cvaC	
+ESC_NA4049AA_AS.fasta	NODE_24_length_83346_cov_12.904	62221	64335	-	cvaB	1-2115/2115	===============	0/0	100.00	99.91	colV_zoetis		cvaB	
+ESC_NA4049AA_AS.fasta	NODE_24_length_83346_cov_12.904	64310	65221	-	cvaA	1-912/912	===============	0/0	100.00	100.00	colV_zoetis		cvaA	
+ESC_NA4049AA_AS.fasta	NODE_24_length_83346_cov_12.904	69496	71673	-	iroN	1-2178/2178	===============	0/0	100.00	99.77	colV_zoetis		iroN	
+ESC_NA4049AA_AS.fasta	NODE_24_length_83346_cov_12.904	71718	72674	-	iroE	1-957/957	===============	0/0	100.00	100.00	colV_zoetis		iroE	
+ESC_NA4049AA_AS.fasta	NODE_24_length_83346_cov_12.904	72759	73988	-	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+ESC_NA4049AA_AS.fasta	NODE_24_length_83346_cov_12.904	74092	77877	-	iroC	1-3786/3786	===============	0/0	100.00	99.84	colV_zoetis		iroC	
+ESC_NA4049AA_AS.fasta	NODE_24_length_83346_cov_12.904	77891	79054	-	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+ESC_NA4049AA_AS.fasta	NODE_46_length_18170_cov_12.9603	597	2798	-	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+ESC_NA4049AA_AS.fasta	NODE_46_length_18170_cov_12.9603	2880	4157	-	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_NA4049AA_AS.fasta	NODE_46_length_18170_cov_12.9603	4154	5896	-	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_NA4049AA_AS.fasta	NODE_46_length_18170_cov_12.9603	5896	6843	-	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_NA4049AA_AS.fasta	NODE_46_length_18170_cov_12.9603	6844	8625	-	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+ESC_NA4049AA_AS.fasta	NODE_63_length_5597_cov_9.2936	1931	2884	-	ompT	1-954/954	===============	0/0	100.00	100.00	colV_zoetis		ompT	
+ESC_NA4049AA_AS.fasta	NODE_63_length_5597_cov_9.2936	3645	5397	-	hlyF	1-1754/1754	========/======	1/1	99.94	99.37	colV_zoetis		hlyF	
+ESC_NA4049AA_AS.fasta	NODE_93_length_1555_cov_16.1646	469	1296	-	sitB	1-828/828	===============	0/0	100.00	98.55	colV_zoetis		sitB	
+ESC_NA4049AA_AS.fasta	NODE_99_length_1342_cov_14.1325	256	1083	-	sitB	1-828/828	===============	0/0	100.00	100.00	colV_zoetis		sitB	

@@ -1,0 +1,11 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_ZA6514AA_AS.fasta	NODE_13_length_131801_cov_28.950013	8111	10310	-	iutA	3-2202/2202	===============	0/0	99.91	89.50	colV_zoetis		iutA	
+ESC_ZA6514AA_AS.fasta	NODE_13_length_131801_cov_28.950013	10377	11649	-	iucD	1-1273/1278	===============	0/0	99.61	96.78	colV_zoetis		iucD	
+ESC_ZA6514AA_AS.fasta	NODE_13_length_131801_cov_28.950013	11646	13388	-	iucC	1-1743/1743	===============	0/0	100.00	96.04	colV_zoetis		iucC	
+ESC_ZA6514AA_AS.fasta	NODE_13_length_131801_cov_28.950013	13388	14335	-	iucB	1-948/948	===============	0/0	100.00	95.67	colV_zoetis		iucB	
+ESC_ZA6514AA_AS.fasta	NODE_13_length_131801_cov_28.950013	14336	16117	-	iucA	1-1782/1782	===============	0/0	100.00	94.11	colV_zoetis		iucA	
+ESC_ZA6514AA_AS.fasta	NODE_13_length_131801_cov_28.950013	46195	47950	+	hlyF	1-1754/1754	========/======	3/4	99.94	96.53	colV_zoetis		hlyF	
+ESC_ZA6514AA_AS.fasta	NODE_6_length_270083_cov_26.527679	262839	263753	+	sitA	1-915/915	===============	0/0	100.00	98.25	colV_zoetis		sitA	
+ESC_ZA6514AA_AS.fasta	NODE_6_length_270083_cov_26.527679	263753	264580	+	sitB	1-828/828	===============	0/0	100.00	98.31	colV_zoetis		sitB	
+ESC_ZA6514AA_AS.fasta	NODE_6_length_270083_cov_26.527679	264577	265412	+	sitC	1-837/837	========/======	1/1	99.88	98.69	colV_zoetis		sitC	
+ESC_ZA6514AA_AS.fasta	NODE_6_length_270083_cov_26.527679	265431	266288	+	sitD	1-858/858	===============	0/0	100.00	95.92	colV_zoetis		sitD	

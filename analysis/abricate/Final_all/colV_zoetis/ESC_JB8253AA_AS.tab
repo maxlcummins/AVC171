@@ -1,0 +1,22 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_39_length_21412_cov_7.874513	17453	18367	+	sitA	1-915/915	===============	0/0	100.00	98.36	colV_zoetis		sitA	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_39_length_21412_cov_7.874513	18367	19194	+	sitB	1-828/828	===============	0/0	100.00	98.79	colV_zoetis		sitB	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_39_length_21412_cov_7.874513	19191	20026	+	sitC	1-837/837	========/======	1/1	99.88	98.92	colV_zoetis		sitC	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_39_length_21412_cov_7.874513	20045	20902	+	sitD	1-858/858	===============	0/0	100.00	95.80	colV_zoetis		sitD	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_44_length_13712_cov_3.672580	4070	5233	+	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_44_length_13712_cov_3.672580	5247	9032	+	iroC	1-3786/3786	===============	0/0	100.00	99.84	colV_zoetis		iroC	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_44_length_13712_cov_3.672580	9136	10365	+	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_44_length_13712_cov_3.672580	10450	11406	+	iroE	1-957/957	===============	0/0	100.00	100.00	colV_zoetis		iroE	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_44_length_13712_cov_3.672580	11451	13628	+	iroN	1-2178/2178	===============	0/0	100.00	99.95	colV_zoetis		iroN	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_45_length_12371_cov_3.377736	3747	5528	+	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_45_length_12371_cov_3.377736	5529	6476	+	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_45_length_12371_cov_3.377736	6476	8218	+	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_45_length_12371_cov_3.377736	8215	9492	+	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_45_length_12371_cov_3.377736	9574	11775	+	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_52_length_7449_cov_3.086862	3227	3463	-	cvi	1-237/237	===============	0/0	100.00	100.00	colV_zoetis		cvi	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_52_length_7449_cov_3.086862	3441	3752	-	cvaC	1-312/312	===============	0/0	100.00	100.00	colV_zoetis		cvaC	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_52_length_7449_cov_3.086862	3922	6036	-	cvaB	1-2115/2115	===============	0/0	100.00	99.91	colV_zoetis		cvaB	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_52_length_7449_cov_3.086862	6011	6922	-	cvaA	1-912/912	===============	0/0	100.00	100.00	colV_zoetis		cvaA	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_53_length_6500_cov_2.835086	2349	2726	+	etsA	1-378/378	===============	0/0	100.00	98.94	colV_zoetis		etsA	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_53_length_6500_cov_2.835086	2723	4663	+	etsB	1-1941/1941	===============	0/0	100.00	99.95	colV_zoetis		etsB	
+ESC_JB8253AA_AS.fasta	ESC_JB8253AA_AS_NODE_53_length_6500_cov_2.835086	4667	6037	+	etsC	1-1371/1371	===============	0/0	100.00	100.00	colV_zoetis		etsC	

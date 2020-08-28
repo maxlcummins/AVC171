@@ -1,0 +1,17 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_VA1064AA_AS.fasta	NODE_17_length_95012_cov_16.759500	61421	61657	-	cvi	1-237/237	===============	0/0	100.00	100.00	colV_zoetis		cvi	
+ESC_VA1064AA_AS.fasta	NODE_17_length_95012_cov_16.759500	61635	61946	-	cvaC	1-312/312	===============	0/0	100.00	100.00	colV_zoetis		cvaC	
+ESC_VA1064AA_AS.fasta	NODE_17_length_95012_cov_16.759500	62116	64230	-	cvaB	1-2115/2115	===============	0/0	100.00	99.91	colV_zoetis		cvaB	
+ESC_VA1064AA_AS.fasta	NODE_17_length_95012_cov_16.759500	64205	65116	-	cvaA	1-912/912	===============	0/0	100.00	100.00	colV_zoetis		cvaA	
+ESC_VA1064AA_AS.fasta	NODE_17_length_95012_cov_16.759500	69391	71568	-	iroN	1-2178/2178	===============	0/0	100.00	99.77	colV_zoetis		iroN	
+ESC_VA1064AA_AS.fasta	NODE_17_length_95012_cov_16.759500	71613	72569	-	iroE	1-957/957	===============	0/0	100.00	99.90	colV_zoetis		iroE	
+ESC_VA1064AA_AS.fasta	NODE_17_length_95012_cov_16.759500	72654	73883	-	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+ESC_VA1064AA_AS.fasta	NODE_17_length_95012_cov_16.759500	73987	77772	-	iroC	1-3786/3786	===============	0/0	100.00	99.84	colV_zoetis		iroC	
+ESC_VA1064AA_AS.fasta	NODE_17_length_95012_cov_16.759500	77786	78949	-	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+ESC_VA1064AA_AS.fasta	NODE_28_length_12606_cov_15.825358	716	2917	-	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+ESC_VA1064AA_AS.fasta	NODE_28_length_12606_cov_15.825358	2999	4276	-	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_VA1064AA_AS.fasta	NODE_28_length_12606_cov_15.825358	4273	6015	-	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_VA1064AA_AS.fasta	NODE_28_length_12606_cov_15.825358	6015	6962	-	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_VA1064AA_AS.fasta	NODE_28_length_12606_cov_15.825358	6963	8744	-	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+ESC_VA1064AA_AS.fasta	NODE_36_length_2407_cov_31.220880	371	1198	+	sitB	1-828/828	===============	0/0	100.00	99.64	colV_zoetis		sitB	
+ESC_VA1064AA_AS.fasta	NODE_36_length_2407_cov_31.220880	1195	2030	+	sitC	1-837/837	========/======	1/1	99.88	99.16	colV_zoetis		sitC	

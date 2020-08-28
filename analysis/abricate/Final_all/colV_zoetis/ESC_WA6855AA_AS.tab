@@ -1,0 +1,10 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_WA6855AA_AS.fasta	NODE_17_length_81575_cov_6.601436	19348	20511	+	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+ESC_WA6855AA_AS.fasta	NODE_17_length_81575_cov_6.601436	20525	24310	+	iroC	1-3786/3786	===============	0/0	100.00	99.71	colV_zoetis		iroC	
+ESC_WA6855AA_AS.fasta	NODE_17_length_81575_cov_6.601436	24414	25643	+	iroD	1-1230/1230	===============	0/0	100.00	99.35	colV_zoetis		iroD	
+ESC_WA6855AA_AS.fasta	NODE_17_length_81575_cov_6.601436	25728	26684	+	iroE	1-957/957	===============	0/0	100.00	99.27	colV_zoetis		iroE	
+ESC_WA6855AA_AS.fasta	NODE_17_length_81575_cov_6.601436	26729	28906	+	iroN	1-2178/2178	===============	0/0	100.00	99.27	colV_zoetis		iroN	
+ESC_WA6855AA_AS.fasta	NODE_39_length_15534_cov_5.241245	7978	8892	+	sitA	1-915/915	===============	0/0	100.00	98.25	colV_zoetis		sitA	
+ESC_WA6855AA_AS.fasta	NODE_39_length_15534_cov_5.241245	8892	9719	+	sitB	1-828/828	===============	0/0	100.00	98.67	colV_zoetis		sitB	
+ESC_WA6855AA_AS.fasta	NODE_39_length_15534_cov_5.241245	9716	10551	+	sitC	1-837/837	========/======	1/1	99.88	98.45	colV_zoetis		sitC	
+ESC_WA6855AA_AS.fasta	NODE_39_length_15534_cov_5.241245	10570	11427	+	sitD	1-858/858	===============	0/0	100.00	95.80	colV_zoetis		sitD	

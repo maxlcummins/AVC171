@@ -1,0 +1,23 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_107_length_3616_cov_5.789323	151	2265	-	cvaB	1-2115/2115	===============	0/0	100.00	99.91	colV_zoetis		cvaB	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_107_length_3616_cov_5.789323	2240	3151	-	cvaA	1-912/912	===============	0/0	100.00	99.89	colV_zoetis		cvaA	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_71_length_13158_cov_8.666156	89	2266	-	iroN	1-2178/2178	===============	0/0	100.00	99.77	colV_zoetis		iroN	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_71_length_13158_cov_8.666156	2311	3267	-	iroE	1-957/957	===============	0/0	100.00	100.00	colV_zoetis		iroE	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_71_length_13158_cov_8.666156	3352	4581	-	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_71_length_13158_cov_8.666156	4685	8470	-	iroC	1-3786/3786	===============	0/0	100.00	99.84	colV_zoetis		iroC	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_71_length_13158_cov_8.666156	8484	9647	-	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_73_length_12161_cov_14.748091	326	1183	-	sitD	1-858/858	===============	0/0	100.00	95.92	colV_zoetis		sitD	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_73_length_12161_cov_14.748091	1202	2037	-	sitC	1-837/837	========/======	1/1	99.88	98.45	colV_zoetis		sitC	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_73_length_12161_cov_14.748091	2034	2861	-	sitB	1-828/828	===============	0/0	100.00	98.91	colV_zoetis		sitB	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_73_length_12161_cov_14.748091	2861	3775	-	sitA	1-915/915	===============	0/0	100.00	98.25	colV_zoetis		sitA	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_77_length_10561_cov_7.037232	379	1332	+	ompT	1-954/954	===============	0/0	100.00	100.00	colV_zoetis		ompT	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_77_length_10561_cov_7.037232	6424	6801	+	etsA	1-378/378	===============	0/0	100.00	98.68	colV_zoetis		etsA	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_77_length_10561_cov_7.037232	6798	8738	+	etsB	1-1941/1941	===============	0/0	100.00	99.95	colV_zoetis		etsB	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_77_length_10561_cov_7.037232	8742	10112	+	etsC	1-1371/1371	===============	0/0	100.00	100.00	colV_zoetis		etsC	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_82_length_8783_cov_10.202653	16	1797	+	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_82_length_8783_cov_10.202653	1798	2745	+	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_82_length_8783_cov_10.202653	2745	4487	+	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_82_length_8783_cov_10.202653	4484	5761	+	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_82_length_8783_cov_10.202653	5843	8044	+	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_83_length_8597_cov_7.628713	8025	8261	-	cvi	1-237/237	===============	0/0	100.00	100.00	colV_zoetis		cvi	
+ESC_GB6540AA_AS.fasta	ESC_GB6540AA_AS_NODE_83_length_8597_cov_7.628713	8239	8550	-	cvaC	1-312/312	===============	0/0	100.00	100.00	colV_zoetis		cvaC	

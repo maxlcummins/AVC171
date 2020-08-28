@@ -1,0 +1,14 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_33_length_26397_cov_7.251311	5540	6397	-	sitD	1-858/858	===============	0/0	100.00	95.92	colV_zoetis		sitD	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_33_length_26397_cov_7.251311	6416	7251	-	sitC	1-837/837	========/======	1/1	99.88	98.81	colV_zoetis		sitC	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_33_length_26397_cov_7.251311	7248	8075	-	sitB	1-828/828	===============	0/0	100.00	99.64	colV_zoetis		sitB	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_33_length_26397_cov_7.251311	8075	8989	-	sitA	1-915/915	===============	0/0	100.00	99.45	colV_zoetis		sitA	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_43_length_14410_cov_7.130174	82	293	+	cvi	26-237/237	.==============	0/0	89.45	100.00	colV_zoetis		cvi	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_44_length_12357_cov_6.842839	3777	5558	+	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_44_length_12357_cov_6.842839	5559	6506	+	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_44_length_12357_cov_6.842839	6506	8248	+	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_44_length_12357_cov_6.842839	8245	9522	+	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_44_length_12357_cov_6.842839	9604	11805	+	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_51_length_7623_cov_7.811804	89	400	-	cvaC	1-312/312	===============	0/0	100.00	100.00	colV_zoetis		cvaC	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_51_length_7623_cov_7.811804	570	2684	-	cvaB	1-2115/2115	===============	0/0	100.00	99.91	colV_zoetis		cvaB	
+ESC_GB6695AA_AS.fasta	ESC_GB6695AA_AS_NODE_51_length_7623_cov_7.811804	2659	3570	-	cvaA	1-912/912	===============	0/0	100.00	100.00	colV_zoetis		cvaA	

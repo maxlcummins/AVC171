@@ -1,0 +1,16 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_FA1638AA_AS.fasta	NODE_290_length_3029_cov_9.07818_ID_579	371	1198	+	sitB	1-828/828	===============	0/0	100.00	98.79	colV_zoetis		sitB	
+ESC_FA1638AA_AS.fasta	NODE_290_length_3029_cov_9.07818_ID_579	1195	2030	+	sitC	1-837/837	========/======	1/1	99.88	98.92	colV_zoetis		sitC	
+ESC_FA1638AA_AS.fasta	NODE_290_length_3029_cov_9.07818_ID_579	2049	2906	+	sitD	1-858/858	===============	0/0	100.00	96.04	colV_zoetis		sitD	
+ESC_FA1638AA_AS.fasta	NODE_42_length_13934_cov_3.96534_ID_83	4046	5209	+	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+ESC_FA1638AA_AS.fasta	NODE_42_length_13934_cov_3.96534_ID_83	5223	9008	+	iroC	1-3786/3786	===============	0/0	100.00	99.84	colV_zoetis		iroC	
+ESC_FA1638AA_AS.fasta	NODE_42_length_13934_cov_3.96534_ID_83	9112	10341	+	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+ESC_FA1638AA_AS.fasta	NODE_42_length_13934_cov_3.96534_ID_83	10426	11382	+	iroE	1-957/957	===============	0/0	100.00	100.00	colV_zoetis		iroE	
+ESC_FA1638AA_AS.fasta	NODE_42_length_13934_cov_3.96534_ID_83	11427	13604	+	iroN	1-2178/2178	===============	0/0	100.00	99.72	colV_zoetis		iroN	
+ESC_FA1638AA_AS.fasta	NODE_43_length_12335_cov_3.94742_ID_85	557	2758	-	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+ESC_FA1638AA_AS.fasta	NODE_43_length_12335_cov_3.94742_ID_85	2840	4117	-	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_FA1638AA_AS.fasta	NODE_43_length_12335_cov_3.94742_ID_85	4114	5856	-	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_FA1638AA_AS.fasta	NODE_43_length_12335_cov_3.94742_ID_85	5856	6803	-	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_FA1638AA_AS.fasta	NODE_43_length_12335_cov_3.94742_ID_85	6804	8585	-	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+ESC_FA1638AA_AS.fasta	NODE_45_length_10028_cov_4.10653_ID_89	4685	6437	+	hlyF	1-1754/1754	========/======	1/1	99.94	99.37	colV_zoetis		hlyF	
+ESC_FA1638AA_AS.fasta	NODE_45_length_10028_cov_4.10653_ID_89	7198	8151	+	ompT	1-954/954	===============	0/0	100.00	100.00	colV_zoetis		ompT	

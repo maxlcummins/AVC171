@@ -1,0 +1,24 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_WA6922AA_AS.fasta	NODE_16_length_132591_cov_4.986883	5002	5859	-	sitD	1-858/858	===============	0/0	100.00	95.80	colV_zoetis		sitD	
+ESC_WA6922AA_AS.fasta	NODE_16_length_132591_cov_4.986883	5878	6713	-	sitC	1-837/837	========/======	1/1	99.88	98.69	colV_zoetis		sitC	
+ESC_WA6922AA_AS.fasta	NODE_16_length_132591_cov_4.986883	6710	7537	-	sitB	1-828/828	===============	0/0	100.00	98.43	colV_zoetis		sitB	
+ESC_WA6922AA_AS.fasta	NODE_16_length_132591_cov_4.986883	7537	8451	-	sitA	1-915/915	===============	0/0	100.00	98.25	colV_zoetis		sitA	
+ESC_WA6922AA_AS.fasta	NODE_20_length_70608_cov_3.136506	42012	42248	-	cvi	1-237/237	===============	0/0	100.00	100.00	colV_zoetis		cvi	
+ESC_WA6922AA_AS.fasta	NODE_20_length_70608_cov_3.136506	42226	42537	-	cvaC	1-312/312	===============	0/0	100.00	100.00	colV_zoetis		cvaC	
+ESC_WA6922AA_AS.fasta	NODE_20_length_70608_cov_3.136506	42707	44821	-	cvaB	1-2115/2115	===============	0/0	100.00	99.91	colV_zoetis		cvaB	
+ESC_WA6922AA_AS.fasta	NODE_20_length_70608_cov_3.136506	44796	45707	-	cvaA	1-912/912	===============	0/0	100.00	100.00	colV_zoetis		cvaA	
+ESC_WA6922AA_AS.fasta	NODE_20_length_70608_cov_3.136506	49981	52158	-	iroN	1-2178/2178	===============	0/0	100.00	99.72	colV_zoetis		iroN	
+ESC_WA6922AA_AS.fasta	NODE_20_length_70608_cov_3.136506	52203	53159	-	iroE	1-957/957	===============	0/0	100.00	99.90	colV_zoetis		iroE	
+ESC_WA6922AA_AS.fasta	NODE_20_length_70608_cov_3.136506	53244	54473	-	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+ESC_WA6922AA_AS.fasta	NODE_20_length_70608_cov_3.136506	54577	58362	-	iroC	1-3786/3786	===============	0/0	100.00	99.81	colV_zoetis		iroC	
+ESC_WA6922AA_AS.fasta	NODE_20_length_70608_cov_3.136506	58376	59539	-	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+ESC_WA6922AA_AS.fasta	NODE_30_length_16292_cov_3.483365	3835	5616	+	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+ESC_WA6922AA_AS.fasta	NODE_30_length_16292_cov_3.483365	5617	6564	+	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_WA6922AA_AS.fasta	NODE_30_length_16292_cov_3.483365	6564	8306	+	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_WA6922AA_AS.fasta	NODE_30_length_16292_cov_3.483365	8303	9580	+	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_WA6922AA_AS.fasta	NODE_30_length_16292_cov_3.483365	9662	11863	+	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+ESC_WA6922AA_AS.fasta	NODE_32_length_10146_cov_3.809249	1650	2603	-	ompT	1-954/954	===============	0/0	100.00	100.00	colV_zoetis		ompT	
+ESC_WA6922AA_AS.fasta	NODE_32_length_10146_cov_3.809249	3364	5116	-	hlyF	1-1754/1754	========/======	1/1	99.94	99.37	colV_zoetis		hlyF	
+ESC_WA6922AA_AS.fasta	NODE_35_length_6419_cov_3.833755	419	1789	-	etsC	1-1371/1371	===============	0/0	100.00	100.00	colV_zoetis		etsC	
+ESC_WA6922AA_AS.fasta	NODE_35_length_6419_cov_3.833755	1793	3733	-	etsB	1-1941/1941	===============	0/0	100.00	99.95	colV_zoetis		etsB	
+ESC_WA6922AA_AS.fasta	NODE_35_length_6419_cov_3.833755	3730	4107	-	etsA	1-378/378	===============	0/0	100.00	98.94	colV_zoetis		etsA	

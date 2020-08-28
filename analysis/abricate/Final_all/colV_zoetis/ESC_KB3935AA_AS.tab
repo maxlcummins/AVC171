@@ -1,0 +1,24 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_12_length_136016_cov_16.171085	8306	9163	-	sitD	1-858/858	===============	0/0	100.00	95.92	colV_zoetis		sitD	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_12_length_136016_cov_16.171085	9182	10017	-	sitC	1-837/837	========/======	1/1	99.88	98.45	colV_zoetis		sitC	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_12_length_136016_cov_16.171085	10014	10841	-	sitB	1-828/828	===============	0/0	100.00	98.91	colV_zoetis		sitB	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_12_length_136016_cov_16.171085	10841	11755	-	sitA	1-915/915	===============	0/0	100.00	98.25	colV_zoetis		sitA	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_47_length_17601_cov_10.585201	3765	5942	-	iroN	1-2178/2178	===============	0/0	100.00	99.95	colV_zoetis		iroN	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_47_length_17601_cov_10.585201	5987	6943	-	iroE	1-957/957	===============	0/0	100.00	100.00	colV_zoetis		iroE	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_47_length_17601_cov_10.585201	7028	8257	-	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_47_length_17601_cov_10.585201	8361	12146	-	iroC	1-3786/3786	===============	0/0	100.00	99.84	colV_zoetis		iroC	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_47_length_17601_cov_10.585201	12160	13323	-	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_57_length_12249_cov_10.821688	3639	5420	+	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_57_length_12249_cov_10.821688	5421	6368	+	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_57_length_12249_cov_10.821688	6368	8110	+	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_57_length_12249_cov_10.821688	8107	9384	+	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_57_length_12249_cov_10.821688	9466	11667	+	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_64_length_6996_cov_8.639111	524	1435	+	cvaA	1-912/912	===============	0/0	100.00	100.00	colV_zoetis		cvaA	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_64_length_6996_cov_8.639111	1410	3524	+	cvaB	1-2115/2115	===============	0/0	100.00	99.91	colV_zoetis		cvaB	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_64_length_6996_cov_8.639111	3694	4005	+	cvaC	1-312/312	===============	0/0	100.00	100.00	colV_zoetis		cvaC	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_64_length_6996_cov_8.639111	3983	4219	+	cvi	1-237/237	===============	0/0	100.00	100.00	colV_zoetis		cvi	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_65_length_6902_cov_11.656356	357	2109	-	hlyF	1-1754/1754	========/======	1/1	99.94	99.37	colV_zoetis		hlyF	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_67_length_6472_cov_9.878125	450	1820	-	etsC	1-1371/1371	===============	0/0	100.00	100.00	colV_zoetis		etsC	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_67_length_6472_cov_9.878125	1824	3764	-	etsB	1-1941/1941	===============	0/0	100.00	99.95	colV_zoetis		etsB	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_67_length_6472_cov_9.878125	3761	4138	-	etsA	1-378/378	===============	0/0	100.00	98.94	colV_zoetis		etsA	
+ESC_KB3935AA_AS.fasta	ESC_KB3935AA_AS_NODE_80_length_3059_cov_5.921928	1673	2626	-	ompT	1-954/954	===============	0/0	100.00	100.00	colV_zoetis		ompT	
