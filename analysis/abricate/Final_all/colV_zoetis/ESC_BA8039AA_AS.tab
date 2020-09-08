@@ -1,9 +1,0 @@
-#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
-ESC_BA8039AA_AS.fasta	NODE_51_length_24092_cov_7.12735_ID_101	20502	21416	+	sitA	1-915/915	===============	0/0	100.00	98.25	colV_zoetis		sitA	
-ESC_BA8039AA_AS.fasta	NODE_51_length_24092_cov_7.12735_ID_101	21416	22243	+	sitB	1-828/828	===============	0/0	100.00	98.67	colV_zoetis		sitB	
-ESC_BA8039AA_AS.fasta	NODE_51_length_24092_cov_7.12735_ID_101	22240	23075	+	sitC	1-837/837	========/======	1/1	99.88	98.92	colV_zoetis		sitC	
-ESC_BA8039AA_AS.fasta	NODE_51_length_24092_cov_7.12735_ID_101	23094	23951	+	sitD	1-858/858	===============	0/0	100.00	98.72	colV_zoetis		sitD	
-ESC_BA8039AA_AS.fasta	NODE_67_length_10190_cov_6.96249_ID_133	2319	2555	-	cvi	1-237/237	===============	0/0	100.00	100.00	colV_zoetis		cvi	
-ESC_BA8039AA_AS.fasta	NODE_67_length_10190_cov_6.96249_ID_133	2533	2844	-	cvaC	1-312/312	===============	0/0	100.00	100.00	colV_zoetis		cvaC	
-ESC_BA8039AA_AS.fasta	NODE_67_length_10190_cov_6.96249_ID_133	3014	5128	-	cvaB	1-2115/2115	===============	0/0	100.00	99.95	colV_zoetis		cvaB	
-ESC_BA8039AA_AS.fasta	NODE_67_length_10190_cov_6.96249_ID_133	5103	6014	-	cvaA	1-912/912	===============	0/0	100.00	100.00	colV_zoetis		cvaA	
