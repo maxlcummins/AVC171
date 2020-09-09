@@ -14,7 +14,7 @@ gene_dbs: ['dfrA5_848']
 #outdir: /home/malcummi/Data/Manuscripts/2020/AVC171/other_analysis/Steve_848/
 outdir: /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/analysis/abricate/
 #Output prefix
-prefix: ST95_all
+prefix: AVC171_all
 #minimum nucleotide ID (default for abricate is 75)
 minimum_id: 75
 #minimum coverage (default for abricate is 0)

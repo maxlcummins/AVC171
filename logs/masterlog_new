@@ -1,0 +1,123 @@
+#########################################################################################################################
+###################### Master log #######################################################################################
+#########################################################################################################################
+
+# This file contains the commands used to generate the analysis outputs and log files for abricate, snplord, pointfinder and pMLST
+# All paths that dont start at root or home are relative to the AVC171 github repo
+
+#########################################################################################################################
+###################### Original strains     #############################################################################
+#########################################################################################################################
+
+#Strains of HC50-1106 were downloaded from Enterobase.
+
+# Some strains were removed due to poor metadata
+cd /data/malcummi/Manuscripts/2020/AVC171/AVC171/assemblies/
+mv -f */ESC_IA3651AA_AS* */ESC_LA1124AA_AS* */ESC_LA2848AA_AS* */ESC_LA2840AA_AS* */ESC_MA2736AA_AS* hide
+mv -f */ESC_LB6278AA_AS* */ESC_LB6279AA_AS* hide
+
+####   ELABORATE    ###
+
+####   ELABORATE    ###
+
+####   ELABORATE    ###
+
+#########################################################################################################################
+###################### New Strains         ##############################################################################
+#########################################################################################################################
+
+#additional ~721 strains of ST95 to be downloaded from enterobase to provide phylogenetic context for our strains
+#Subsetted down further to strains with <= 50000 'Low Quality Bases' according to Enterobase assembly stats
+cd ~/Data/tools/EnterobaseGenomeAssemblyDownload
+nohup python2 EnterobaseGenomeAssemblyDownload.py -d ecoli -l ~/Data/Manuscripts/2020/AVC171/AVC171/delims/metadata_subset.txt -o ~/Data/Manuscripts/2020/AVC171/AVC171/assemblies/ST95_enterobase_subset > ~/Data/Manuscripts/2020/AVC171/AVC171/logs/Enterobase_dl_ST95_20-7-20.out 2> ~/Data/Manuscripts/2020/AVC171/AVC171/logs/Enterobase_dl_ST95_20-7-20.err &
+##JobID = 57985
+nohup python2 EnterobaseGenomeAssemblyDownload.py -d ecoli -l ~/Data/Manuscripts/2020/AVC171/AVC171/delims/metadata_subset_minus_first_400.txt -o ~/Data/Manuscripts/2020/AVC171/AVC171/assemblies/ST95_enterobase_subset > ~/Data/Manuscripts/2020/AVC171/AVC171/logs/Enterobase_dl_ST95_20-7-20_minus_first_400.out 2> ~/Data/Manuscripts/2020/AVC171/AVC171/logs/Enterobase_dl_ST95_20-7-20_minus_first_400.err &
+##JobID = 222517
+
+#########################################################################################################################
+###################### Snippy and phylogenetic trees ####################################################################
+#########################################################################################################################
+
+#  DONE: √
+
+# Two snplord runs were performed - one for the whole ST95 collection and one for the HC50-1106 collection
+# Note that this was run using both pAVC171-F and the AVC171 chromosome as references - two separate SNP runs were performed
+
+# Pt 1: All strains
+# The snakemake config file used was located at "AVC171/logs/snippy/all_snplord_config.yaml"
+# The snakefile can be found at "AVC171/snakefiles/snippy/Snakefile_all"
+
+rm /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/assemblies/all/AVC171.fasta
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_all  -j --use-conda -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/snippy/nohup_snplord_all_chromosome_and_pAVC171_F.out &
+#jobID=34877
+
+# DONE: √
+
+# Pt 2: HC50_1106 strains
+# The snakemake config file used was located at "AVC171/logs/snippy/HC50_snplord_config.yaml"
+# The snakefile can be found at "AVC171/snakefiles/snippy/Snakefile_HC50"
+
+rm /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/assemblies/HC50_1106/AVC171.fa*
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_HC50  -j --use-conda -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/snippy/nohup_snplord_HC50_chromosome_and_pAVC171_F.out &
+#jobID=195822
+
+
+
+#########################################################################################################################
+###################### Abricate #########################################################################################
+#########################################################################################################################
+
+# DONE: √
+
+# AVC171 was returned to the all and HC50 folders (it had to be removed to avoid a double up in snippy as it was used as a reference)
+#NOT YET RUN BELOW
+cp /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/assemblies/AVC171.fasta /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/assemblies/all
+cp /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/assemblies/AVC171.fasta /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/assemblies/HC50_1106
+
+# The snakemake config file used was located at "/projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/abricate/config.yaml"
+# The snakefile can be found at "AVC171/snakefiles/abricate/Snakefile"
+
+# DONE: √
+
+#Snakemake was used to run abricatelord
+cd ~/Data/pipelord/abricatelord
+nohup snakemake -j --use-conda  -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/abricate/nohup_abricatelord_all.out &
+#jobid = 124907
+
+# DONE: √
+
+#Concatenate abricate output files (when abricate has finished)
+cd /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/analysis/abricate/AVC171_all
+cat ISfinder_Feb_2020/* EC_custom/* card/* plasmidfinder/* vfdb/* > abricate.txt
+cat colV_zoetis/* > ColV_markers.txt
+cat pAVC171-IncF/* > pAVC171-F.txt
+
+#########################################################################################################################
+###################### Pointfinder  #####################################################################################
+#########################################################################################################################
+
+# The snakemake config file used was located at "/projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pointfinder/config.yaml"
+# The snakefile can be found at "AVC171/snakefiles/pointfinder/Snakefile"
+
+# DONE: √
+
+#Snakemake was used to run pointfinderlord
+cd ~/Data/pipelord/pointfinderlord
+nohup snakemake -j --use-conda  -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pointfinder/nohup_pointfinder_all.out &
+#jobid = 184463
+
+#########################################################################################################################
+###################### pMLST ###########################################################################################
+#########################################################################################################################
+
+# The snakemake config file used was located at "/projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pMLST/config.yaml"
+# The snakefile can be found at "AVC171/snakefiles/pMLST/Snakefile"
+
+# DONE: √
+
+#Snakemake was used to run pMLSTlord
+cd ~/Data/pipelord/pMLSTlord
+nohup snakemake -j --use-conda  -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pMLST/nohup_pMLST_all.out &
+#jobid = 211107

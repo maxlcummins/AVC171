@@ -1,6 +1,6 @@
 Locus	Identity	Coverage	Alignment Length	Allele Length	Gaps	Allele	name_file
 FIA						No hit found	AVC171/results_tab.tsv
-FIB	100.0	92.22520107238606	344	373	0	FIB_58?	AVC171/results_tab.tsv
+FIB	100.0	100.0	373	373	0	FIB_1	AVC171/results_tab.tsv
 FIC						No hit found	AVC171/results_tab.tsv
 FII	100.0	100.0	157	157	0	FII_2	AVC171/results_tab.tsv
 FIIK						No hit found	AVC171/results_tab.tsv
