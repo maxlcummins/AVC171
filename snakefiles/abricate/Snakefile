@@ -3,7 +3,7 @@ import subprocess
 import os
 
 configfile:
-    "/projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/snakefiles/abricate/config.yaml"
+    "/data/malcummi/Manuscripts/2020/AVC171/AVC171/misc/config.yaml"
 
 #Get assemblies
 sample_ids, = glob_wildcards(config['assemblies']+"/{sample}.fasta")

@@ -172,25 +172,3 @@ nohup snakemake -s Snakefile_assemblies-j  -j --use-conda -p > /home/malcummi/Da
 cd ~/Data/pipelord/snplord
 nohup snakemake -s Snakefile_assemblies-j  -j --use-conda -p > /home/malcummi/Data/Manuscripts/2020/AVC171/AVC171/logs/snippy/nohup_AVC171_chromosome_rm_nometa.out &
 #jobID=32324
-
-#########################################################################################################################
-###################### pMLST! ###########################################################################################
-#########################################################################################################################
-
-
-#change directory to that with out assemblies of interest
-cd ~/Dropbox/Doctorate/Manuscripts/AVC171/AVC171/assemblies/all
-
-#Make empty directories as outdirs
-for f in *.fasta; do mkdir ~/Dropbox/Doctorate/Manuscripts/AVC171/AVC171/analysis/pMLST/${f/\.fasta/}; done
-
-#run pMLST
-for f in *.fasta;
-do /Users/131785/tools/pmlst/pmlst.py -i $f -o ~/Dropbox/Doctorate/Manuscripts/AVC171/AVC171/analysis/pMLST/${f/\.fasta/} -p /Users/131785/tools/pmlst/pmlst_db -mp /Users/131785/miniconda/envs/kma/bin/blastn -s incf -x;
-done
-
-#concatenate and label the pMLST output for each strain with the strain name
-cd /Users/131785/Dropbox/Doctorate/Manuscripts/AVC171/AVC171/analysis/pMLST
-for f in */results_tab.tsv; do awk 'NR == 1 {print $0 "\tname_file"; next;}{print $0 "\t" FILENAME;}' $f; done > /Users/131785/Dropbox/Doctorate/Manuscripts/AVC171/AVC171/analysis/pMLST/pMLST_results_tmp.txt
-awk 'FNR==1 { header = $0; print } $0 != header' pMLST_results_tmp.txt > pMLST_results.txt
-rm pMLST_results_tmp.txt
