@@ -61,8 +61,50 @@ nohup snakemake -s Snakefile_all  -j --use-conda -p > /projects/AusGEM/Users/Max
 rm /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/assemblies/HC50_1106/AVC171.fa*
 cd ~/Data/pipelord/snplord
 nohup snakemake -s Snakefile_HC50  -j --use-conda -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/snippy/nohup_snplord_HC50_chromosome_and_pAVC171_F.out &
-#jobID=195822
+#jobID=75061
 
+# Pt 2: PH (ESC_NA4045AA_AS) < 50 SNP strains
+# The snakemake config file used was located at "AVC171/logs/snippy/PH_snplord_config.yaml"
+# The snakefile can be found at "AVC171/snakefiles/snippy/Snakefile_PH"
+
+# A subset of strains was selected for additional SNP analysis:
+#ESC_GB6943AA_AS.fasta  ESC_NA3974AA_AS.fasta  ESC_NA3992AA_AS.fasta  ESC_NA4004AA_AS.fasta  ESC_NA4052AA_AS.fasta  ESC_NA4061AA_AS.fasta  ESC_NA4068AA_AS.fasta  ESC_NA4072AA_AS.fasta
+#ESC_HA6420AA_AS.fasta  ESC_NA3975AA_AS.fasta  ESC_NA3999AA_AS.fasta  ESC_NA4005AA_AS.fasta  ESC_NA4053AA_AS.fasta  ESC_NA4063AA_AS.fasta  ESC_NA4069AA_AS.fasta  ESC_SA8291AA_AS.fasta
+#ESC_NA3971AA_AS.fasta  ESC_NA3980AA_AS.fasta  ESC_NA4000AA_AS.fasta  ESC_NA4046AA_AS.fasta  ESC_NA4055AA_AS.fasta  ESC_NA4066AA_AS.fasta  ESC_NA4070AA_AS.fasta  ESC_SA8296AA_AS.fasta
+#ESC_NA3973AA_AS.fasta  ESC_NA3982AA_AS.fasta  ESC_NA4003AA_AS.fasta  ESC_NA4048AA_AS.fasta  ESC_NA4056AA_AS.fasta  ESC_NA4067AA_AS.fasta  ESC_NA4071AA_AS.fasta
+
+# ESC_NA4045AA_AS.fasta was used as the reference
+
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_PH  -j --use-conda -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/snippy/nohup_snplord_PH_less_50.out &
+#jobID=157850
+
+#Snippy was rerun as some strains were not included in snippy core due to snakefile thread allocation and -j.
+
+rm /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/assemblies/HC50_1106/AVC171.fa*
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_HC50  -j --use-conda -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/snippy/nohup_snplord_HC50_redo_pAVC171_F.out &
+#jobID=31997
+
+
+#Some strains were found to be very closely related by various metrics. Therefore, the following strains were run through snippy with various references being the UPEC and faecal strains they were closely related to:
+#ESC_NA3973AA_AS.fasta ESC_NA3974AA_AS.fasta ESC_NA3975AA_AS.fasta ESC_NA3999AA_AS.fasta ESC_NA4000AA_AS.fasta
+#ESC_NA4001AA_AS.fasta ESC_NA4002AA_AS.fasta ESC_NA4003AA_AS.fasta ESC_NA4004AA_AS.fasta ESC_NA4005AA_AS.fasta
+#ESC_NA4067AA_AS.fasta ESC_NA4068AA_AS.fasta ESC_NA4069AA_AS.fasta ESC_NA4070AA_AS.fasta ESC_NA4071AA_AS.fasta ESC_NA4072AA_AS.fasta
+#Also the human strains:
+#ESC_NA4045AA_AS ESC_NA4061AA_AS ESC_NA4066AA_AS
+
+#Refs were ESC_NA4045AA_AS ESC_NA4061AA_AS ESC_NA4066AA_AS
+
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_ANU  -j --use-conda -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/snippy/nohup_snplord_ANU_overlap.out &
+#jobID=206010
+
+#This was also run again without the human strains in (other than as refs)
+
+cd ~/Data/pipelord/snplord
+nohup snakemake -s Snakefile_ANU  -j --use-conda -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/snippy/nohup_snplord_ANU_RMAE_overlap.out &
+#jobID=20947
 
 
 #########################################################################################################################
@@ -94,6 +136,21 @@ cat ISfinder_Feb_2020/* EC_custom/* card/* plasmidfinder/* vfdb/* > abricate.txt
 cat colV_zoetis/* > ColV_markers.txt
 cat pAVC171-IncF/* > pAVC171-F.txt
 
+#Remove intermediate files
+rm -rf card colV_zoetis/ EC_custom/ ISfinder_Feb_2020/ pAVC171-IncF/ plasmidfinder/ vfdb
+
+#Abricate was rerun to allow for screening of pCERC4-like plasmids.
+
+# DONE: √
+
+#Snakemake was used to run abricatelord
+cd ~/Data/pipelord/abricatelord
+nohup snakemake -j --use-conda  -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/abricate/nohup_pCERC4_all.out &
+#jobid = 119367
+
+#Concatenate abricate output files (when abricate has finished)
+cat pCERC4/* > pCERC4.txt
+
 #########################################################################################################################
 ###################### Pointfinder  #####################################################################################
 #########################################################################################################################
@@ -108,8 +165,14 @@ cd ~/Data/pipelord/pointfinderlord
 nohup snakemake -j --use-conda  -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pointfinder/nohup_pointfinder_all.out &
 #jobid = 184463
 
+#Remove intermediate files
+cd /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/analysis/pointfinder
+rm -rf AVC171
+rm -rf ESC_*
+rm *temp.txt
+
 #########################################################################################################################
-###################### pMLST ###########################################################################################
+###################### pMLST ############################################################################################
 #########################################################################################################################
 
 # The snakemake config file used was located at "/projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pMLST/config.yaml"
@@ -121,3 +184,96 @@ nohup snakemake -j --use-conda  -p > /projects/AusGEM/Users/Max/Manuscripts/AVC1
 cd ~/Data/pipelord/pMLSTlord
 nohup snakemake -j --use-conda  -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pMLST/nohup_pMLST_all.out &
 #jobid = 211107
+
+#########################################################################################################################
+###################### Pangenomic Data ##################################################################################
+#########################################################################################################################
+
+# The snakemake config file used was located at "/projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pangenome/config.yaml"
+# The snakefile can be found at "AVC171/snakefiles/pangenome/Snakefile_HC50_1106"
+
+# DONE: √
+
+cd ~/Data/pipelord/pagenomelord
+nohup snakemake -j --use-conda  -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pangenome/nohup_pangenome_HC50_1106.out &
+#jobid = 210148
+
+#Roary output folder was deleted and the command was rerun with the options -e and -n added in the Snakefile
+cd ~/Data/pipelord/pagenomelord
+nohup snakemake -j --use-conda  -p >> /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pangenome/nohup_pangenome_HC50_1106.out &
+#jobid = 118077
+
+
+# DONE: √
+
+source activate /home/malcummi/Data/pipelord/snplord/.snakemake/conda/88bf0609 # snp_sites from snplord
+snp-sites -c core_gene_alignment.aln > ../output/core_gene_alignment_snp_sites.aln
+source deactivate
+
+source activate /home/malcummi/Data/pipelord/snplord/.snakemake/conda/4ead7ed0 # snp_dists from snplord
+snp-dists -c ../output/core_gene_alignment_snp_sites.aln > ../output/core_gene_alignment_snp_dists.csv
+source deactivate
+
+source activate /home/malcummi/Data/pipelord/snplord/.snakemake/conda/89835887 # fasttree from snplord
+fasttree -gtr -nt ../output/core_gene_alignment_snp_sites.aln > ../output/core_gene_alignment_snp_sites.tree
+
+### Cam has suggested using IQtree on the core_gene_alignment.aln instead
+conda create -n iqtree -c bioconda iqtree
+source activate iqtree
+
+#This was run again on the snp_sites
+nohup iqtree -s core_gene_alignment_snp_sites.aln -m MFP -bb 1000 -nt AUTO >iqtree_core_genome_aln.out 2>iqtree_core_genome_aln.err &
+#JOBID=250084
+
+#This was run again on the full alignment (rather than the snp_sites)
+nohup iqtree -s ../Roary.out/core_gene_alignment.aln -m MFP -bb 1000 -nt AUTO >iqtree_core_genome_aln.out 2>iqtree_core_genome_aln.err &
+#JOBID=257443
+
+#########################################################################################################################
+###################### More pangenomic Data ##################################################################################
+#########################################################################################################################
+
+# The snakemake config file used was located at "/projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pangenome/config_all_95.yaml"
+# The snakefile can be found at "AVC171/snakefiles/pangenome/Snakefile_ST95_all"
+
+# DONE: √
+
+cd ~/Data/pipelord/pagenomelord
+nohup snakemake -s Snakefile_ST95_all -j --use-conda  -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pangenome/nohup_pangenome_ST95_all.out &
+#jobid = 169143
+
+#Job failed on Roary step - rerunning:
+# This strain caused an error, so it was deleted
+
+rm /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/assemblies/all/ESC_WA2676AA_AS.fasta
+
+nohup snakemake -s Snakefile_ST95_all -j --use-conda  -p > /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/logs/pangenome/nohup_pangenome_ST95_all_pt_2.out &
+#jobid = 39746
+
+source activate /home/malcummi/Data/pipelord/snplord/.snakemake/conda/88bf0609 # snp_sites from snplord
+snp-sites -c core_gene_alignment.aln > ../output/core_gene_alignment_snp_sites.aln
+source deactivate
+
+source activate /home/malcummi/Data/pipelord/snplord/.snakemake/conda/4ead7ed0 # snp_dists from snplord
+snp-dists -c ../output/core_gene_alignment_snp_sites.aln > ../output/core_gene_alignment_snp_dists.csv
+source deactivate
+
+source activate /home/malcummi/Data/pipelord/snplord/.snakemake/conda/89835887 # fasttree from snplord
+fasttree -gtr -nt ../output/core_gene_alignment_snp_sites.aln > ../output/core_gene_alignment_snp_sites.tree
+
+### Cam has suggested using IQtree on the core_gene_alignment.aln instead
+conda create -n iqtree -c bioconda iqtree
+source activate iqtree
+
+# DONE: √
+
+#This was run again on the snp_sites
+source activate iqtree
+nohup iqtree -s core_gene_alignment_snp_sites.aln -m MFP -bb 1000 -nt AUTO >iqtree_core_genome_aln.out 2>iqtree_core_genome_aln.err &
+#JOBID=111208
+
+# DONE: -
+
+#This was run again on the full alignment (rather than the snp_sites)
+nohup iqtree -s core_gene_alignment.aln -m MFP -bb 1000 -nt AUTO >iqtree_core_genome_aln.out 2>iqtree_core_genome_aln.err &
+#JOBID=257567

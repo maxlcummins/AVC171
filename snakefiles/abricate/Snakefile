@@ -36,7 +36,7 @@ rule all:
 		expand(config['outdir']+"{output_prefix}/{gene_db}/{sample}.tab", sample=sample_ids, gene_db=gene_dbs, output_prefix = output_pre),
 		#expand(config['outdir']+"{output_prefix}_abricate.tab", output_prefix = output_pre)
 
-rule snippy_run:
+rule abricate:
 	input:
 		#db = "{gene_db}", gene_db=gene_dbs,
 		assembly = config['assemblies']+"/{sample}.fasta",

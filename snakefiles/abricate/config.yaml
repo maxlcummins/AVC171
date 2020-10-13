@@ -6,7 +6,8 @@ assemblies: /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/assemblies/all
 gene_db_location: /home/malcummi/Data/miniconda3/envs/abricate/db
 #Name of gene databases you want to screen for
 #gene_dbs: ['ISfinder_Feb_2020','EC_custom_Feb_2020', 'card', 'plasmidfinder', 'ecoh', 'ncbi', 'vfdb', 'colV_zoetis', 'Salmonella_PIAs']
-gene_dbs: ['pAVC171-IncF','ISfinder_Feb_2020','EC_custom', 'card', 'plasmidfinder', 'ecoh', 'vfdb', 'colV_zoetis','dfrA5_848']
+#gene_dbs: ['pAVC171-IncF','ISfinder_Feb_2020','EC_custom', 'card', 'plasmidfinder', 'ecoh', 'vfdb', 'colV_zoetis','dfrA5_848', 'pCERC4']
+gene_dbs: ['pCERC4']
 #Output directory path (should end in '/')
 outdir: /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/analysis/abricate/
 #Output prefix
