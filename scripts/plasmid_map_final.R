@@ -99,6 +99,7 @@ abricate_hits <- abricate_hits %>% filter(name %in% tree$tip.label)
 abricate_hits$coverage_range <- gsub("\\/.*","", abricate_hits$COVERAGE)
 abricate_hits$ref_length <- gsub(".*\\/","", abricate_hits$COVERAGE)
 
+#Save length of plasmid reference as a variable for later use
 ref_length <- as.numeric(unique(abricate_hits$ref_length))
 
 #Replace the '-' with a ':' in the coverage
@@ -130,19 +131,25 @@ start_ends <- list(as.list(as.integer(as.factor(abricate_hits$name))),
                    as.list(as.integer(abricate_hits$start)),
                    as.list(as.integer(abricate_hits$end)))
 
-#SOLN2
+#Create a counter
+counter <- 0
+
+#Map the BLAST hits to our matrix of bp coordinates
 for (i in 1:nrow(abricate_hits)){
   sample <- start_ends[[1]][[i]]
   start_coord <- start_ends[[2]][[i]]
   end_coord <- start_ends[[3]][[i]]
   empty_plasmatrix[sample, start_coord:end_coord] <- 1
+  counter <- counter + 1
+  if(counter %% 1000 == 0){
+    message(paste(counter, "out of ", nrow(abricate_hits), "hits processed"))}
 }
 
+#Rename matrix
 base_matrix <- empty_plasmatrix
 
+#Remove old matrix
 rm(empty_plasmatrix)
-
-base_matrix2 <-as.data.frame(base_matrix2, stringsAsFactors = FALSE)
 
 # Convert matrix to a dataframe
 base_matrix <- as.data.frame(base_matrix, stringsAsFactors = FALSE)
@@ -165,6 +172,7 @@ bin_splits <- split(bin_ranges1, 1+(seq_along(bin_ranges1)-1) %% 2)
 # Initialise empty vector for loop below
 binned_hits <- vector()
 
+#Create a counter
 counter <- 0
 
 # Binning loop
@@ -173,12 +181,15 @@ for (i in seq(1,length(bin_ranges1)/2)){
   row_sum <- as.matrix(rowSums(base_matrix[,bin_splits[[1]][i]:bin_splits[[2]][i]]))
   # Bind them together in a new vector
   binned_hits <- cbind(binned_hits, row_sum)
-  print(paste(counter, " iterations"))
   counter <- counter + 1
+  if(counter %% 50 == 0){
+    message(paste(counter, " samples out of ", length(unique(abricate_hits$name)), " processed" ))}
 }
 
+#Save rownames
 nems <- rownames(binned_hits)
 
+#Convert binned_hits to a data frame
 binned_hits <- as.data.frame(binned_hits)
 
 
