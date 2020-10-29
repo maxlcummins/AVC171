@@ -22,8 +22,8 @@ setwd(wrk_dir)
 
 #Paths to input files
 path_to_tree <- "analysis/snippy/AVC171_all/fasttree/AVC171_chromosome.clean.fullcore.tree"
-path_to_abricate <- "analysis/abricate/AVC171_all/pEC14_114.txt"
-plasrefname <- "pEC14_114"
+path_to_abricate <- "analysis/abricate/ST95_all/pAPEC_O2_ColV.txt"
+plasrefname <- "pAPEC_O2_ColV"
 treerefname <- "AVC171"
 
 #Minimum hit thresholds
@@ -161,13 +161,13 @@ rownames(base_matrix) <- unique(abricate_hits$name)
 df_length <- length(abricate_hits)
 
 # Generate indices that cover blocks of 100 columns in base_matrix
-bin_ranges <- c(seq(from = 1, to = ref_length, by = 99))
+bin_ranges <- c(seq(from = 1, to = ref_length, by = 100))
 
-# Add the last two non-divisible co-ordinates for the remaining bases
-bin_ranges1 <- c(bin_ranges, bin_ranges[length(bin_ranges)]+1, ref_length)
+bin_ranges2 <- c(seq(from = 100, to = ref_length, by = 100), ref_length)
+
 
 # Split the ranges into two lists of  [1] start and [2] end indices 
-bin_splits <- split(bin_ranges1, 1+(seq_along(bin_ranges1)-1) %% 2)
+bin_splits <- list(bin_ranges, bin_ranges2)
 
 # Initialise empty vector for loop below
 binned_hits <- vector()
@@ -176,7 +176,7 @@ binned_hits <- vector()
 counter <- 0
 
 # Binning loop
-for (i in seq(1,length(bin_ranges1)/2)){
+for (i in 1:length(bin_ranges)){
   # Generate row sums (i.e. Number of matching bases) for 100 column chunks of the base_matrix
   row_sum <- as.matrix(rowSums(base_matrix[,bin_splits[[1]][i]:bin_splits[[2]][i]]))
   # Bind them together in a new vector
@@ -192,6 +192,13 @@ nems <- rownames(binned_hits)
 #Convert binned_hits to a data frame
 binned_hits <- as.data.frame(binned_hits)
 
+df6 <- as.data.frame(rowSums(binned_hits))
+
+df6$working_names <- rownames(df6)
+
+colnames(df6) <- c("Percent_hit","working_name")
+
+df6$Percent_hit <- round((df6$Percent_hit/ref_length) * 100)
 
 
 # Write the DF
