@@ -22,8 +22,8 @@ setwd(wrk_dir)
 
 #Paths to input files
 path_to_tree <- "analysis/snippy/AVC171_all/fasttree/AVC171_chromosome.clean.fullcore.tree"
-path_to_abricate <- "analysis/abricate/ST95_all/pAPEC_O2_ColV.txt"
-plasrefname <- "pAPEC_O2_ColV"
+path_to_abricate <- "analysis/abricate/ST95_all/pUTI89.txt"
+plasrefname <- "pUTI89"
 treerefname <- "AVC171"
 
 #Minimum hit thresholds
@@ -176,9 +176,15 @@ binned_hits <- vector()
 counter <- 0
 
 # Binning loop
-for (i in 1:length(bin_ranges)){
-  # Generate row sums (i.e. Number of matching bases) for 100 column chunks of the base_matrix
+for (i in 1:length(bin_ranges2)){
+    # If the last bin is only 1 base long then the as.matrix line won't work,
+    #so we have to include the if statement below:
+  if(i == length(bin_ranges) & bin_ranges[length(bin_ranges)] == bin_ranges2[length(bin_ranges2)]){
+    row_sum <- 1
+  }else{
+    # Generate row sums (i.e. Number of matching bases) for 100 column chunks of the base_matrix
   row_sum <- as.matrix(rowSums(base_matrix[,bin_splits[[1]][i]:bin_splits[[2]][i]]))
+  }
   # Bind them together in a new vector
   binned_hits <- cbind(binned_hits, row_sum)
   counter <- counter + 1
@@ -206,28 +212,28 @@ write.csv(x = binned_hits, file = paste0("delims/",plasrefname, "_plasmid_covera
 
 write.csv(x = df6, file = paste0("delims/",plasrefname, "_plasmid_coverage_percentage.csv"), row.names = TRUE)
 
-# Ignore this probs
-tree1 <- ggtree(tree, branch.length = "none") %<+% metadata +
-  geom_tippoint(aes(color = ColV, offset =100), size = .00000000001) +
-  scale_color_manual(values = c("Yes" = "#df03fc", "No" = "white"))
-
-              gheatmap(tree1, 
-                      data = binned_hits,
-                      font.size = 2,
-                      hjust = 0,
-                      colnames =FALSE,
-                      width = 20,
-                      offset = 0.1,
-                      color = NULL) + 
-  scale_fill_gradient(low = "white", high = "#8dd3c7", na.value = "white") +
-  theme(legend.position = "right")
-              
-
-ggsave("FigureS10_pCERC4_map.tiff",
-       figureS10, 
-       path = "outputs/figures/", 
-       device = "tiff", 
-       width= 297, 
-       height = 210, 
-       unit ="mm", 
-       dpi = "print")
+## Ignore this probs
+#tree1 <- ggtree(tree, branch.length = "none") %<+% metadata +
+#  geom_tippoint(aes(color = ColV, offset =100), size = .00000000001) +
+#  scale_color_manual(values = c("Yes" = "#df03fc", "No" = "white"))
+#
+#              gheatmap(tree1, 
+#                      data = binned_hits,
+#                      font.size = 2,
+#                      hjust = 0,
+#                      colnames =FALSE,
+#                      width = 20,
+#                      offset = 0.1,
+#                      color = NULL) + 
+#  scale_fill_gradient(low = "white", high = "#8dd3c7", na.value = "white") +
+#  theme(legend.position = "right")
+#              
+#
+#ggsave("FigureS10_pCERC4_map.tiff",
+#       figureS10, 
+#       path = "outputs/figures/", 
+#       device = "tiff", 
+#       width= 297, 
+#       height = 210, 
+#       unit ="mm", 
+#       dpi = "print")#
