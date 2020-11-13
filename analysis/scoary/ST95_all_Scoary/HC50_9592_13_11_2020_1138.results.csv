@@ -1,0 +1,6 @@
+"Gene","Non-unique Gene name","Annotation","Number_pos_present_in","Number_neg_present_in","Number_pos_not_present_in","Number_neg_not_present_in","Sensitivity","Specificity","Odds_ratio","Naive_p","Bonferroni_p","Benjamini_H_p"
+"ypdB_2","","putative response regulator in two-component system with YpdA","0","635","20","13","0.0","2.00617283951","0.0","5.93776250531e-30","1.32477419256e-25","1.07243625112e-25"
+"group_6568","ypdB_2","putative response regulator in two-component system with YpdA","20","14","0","634","100.0","97.8395061728","inf","1.442028037e-29","3.21730875336e-25","1.07243625112e-25"
+"fryA_1","","fused predicted PTS system enzymes: Hpr component, enzyme I component, enzyme IIA component","20","14","0","634","100.0","97.8395061728","inf","1.442028037e-29","3.21730875336e-25","1.07243625112e-25"
+"ypdE","","broad-specificity examinopeptidase","0","626","20","22","0.0","3.3950617284","0.0","5.32266428942e-27","1.18753962961e-22","2.96884907403e-23"
+"group_7686","ypdE","broad-specificity examinopeptidase","20","23","0","625","100.0","96.450617284","inf","9.95106801936e-27","2.2201827858e-22","4.4403655716e-23"

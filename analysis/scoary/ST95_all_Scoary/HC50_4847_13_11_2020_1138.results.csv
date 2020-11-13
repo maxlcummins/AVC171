@@ -1,0 +1,2 @@
+"Gene","Non-unique Gene name","Annotation","Number_pos_present_in","Number_neg_present_in","Number_pos_not_present_in","Number_neg_not_present_in","Sensitivity","Specificity","Odds_ratio","Naive_p","Bonferroni_p","Benjamini_H_p"
+"gadE_1","","GadE DNA-binding transcriptional activator","17","12","0","639","100.0","98.1566820276","inf","2.15853129991e-26","4.81589918324e-22","4.81589918324e-22"

@@ -1,0 +1,17 @@
+11/13/2020 11:36:59 AM    ==== Scoary started ====
+11/13/2020 11:36:59 AM    Command: ./scoary.py -g /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/analysis/pangenome/ST95_all/Roary.out/gene_presence_absence.csv -t /projects/AusGEM/Users/Max/Manuscripts/AVC171/AVC171/delims/scoary_traits.csv -o ST95_all_Scoary --threads 20
+11/13/2020 11:36:59 AM    Reading gene presence absence file
+11/13/2020 11:37:08 AM    Creating Hamming distance matrix based on gene presence/absence
+11/13/2020 11:37:21 AM    Building UPGMA tree from distance matrix
+11/13/2020 11:37:28 AM    Reading traits file
+11/13/2020 11:37:30 AM    Finished loading files into memory.
+
+
+11/13/2020 11:37:30 AM    ==== Performing statistics ====
+11/13/2020 11:37:30 AM    -- Filtration options --
+11/13/2020 11:37:30 AM    Individual (Naive):    0.05
+11/13/2020 11:37:30 AM    Collapse genes:    False
+
+
+11/13/2020 11:37:30 AM    Tallying genes and performing statistical analyses
+11/13/2020 11:37:30 AM    Gene-wise counting and Fisher's exact tests for trait: HC200_8655
